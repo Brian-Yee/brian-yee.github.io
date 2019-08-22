@@ -11,8 +11,8 @@ links:
   - name:         Posts
     url:          /
     external:     false
-  - name:         About Me
-    url:          /about
+  - name:         Start Here
+    url:          /start-here
     external:     false
   - name:         Curated Links
     url:          /curated-links
