@@ -1,6 +1,6 @@
 # ----------- CONFIGURABLE START -----------
-title:            "Scribble"
-description:      "Such theme, very cool."
+title:            "Some Thoughts on the Common Mode"
+description:      "Still, it might not be a bad idea, every time you commit an antisocial act, to make a note of it in your diary, and then, at the appropriate season, push an acorn into the ground"
 url:              http://brian-yee.github.io # Site url, without a slash at the end.
 signoff:          "Brian" # Your name
 facebook_appid:   # APP ID for like button, remove from /_includes/share.html if unwanted.
