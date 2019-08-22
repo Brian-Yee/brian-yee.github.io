@@ -1,9 +1,18 @@
 ---
-title: About me
+title: About Me
 ---
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend.
+Hi, I'm Brian. This is my site, this is my About Me page that is an attempt to convey myself in a
+timely bite-sized chunk of text. To save your time I will enumerate all the factual observations
+you would make of me over time:
 
-Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi.
+- I am a consultant specializing in Machine Learning with 3 years experience.
+- I have an MSc in theoretical physics and another in comp-sci
+- I read fairly ferociously you can usually find some denser philosophical book paired with a
+  slimmer [Penguin's Great Idea](https://en.wikipedia.org/wiki/Penguin_Great_Ideas) book in my
+  backpack at all times
+- I am a triathlete that focuses on long-distance racing (Ironman 70.3, Ironman)
+- I adhere to a vegan diet + eggs (gotta get that B12 and complete amino acid profile!)
+- I spend around 20 minutes a day playing with my cat.
 
-Find me on [GitHub](https://github.com/muan) or [Twitter](https://twitter.com/muanchiou).
+Find me on [GitHub](https://github.com/brian-yee).
