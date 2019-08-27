@@ -23,3 +23,7 @@ permalink:        /posts/:title
 defaults:
   - values:
       layout: "default"
+
+# ---------- NON SCRIBBLE DEFAULT ----------
+plugins:
+  - jekyll-feed
