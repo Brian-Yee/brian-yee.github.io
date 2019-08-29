@@ -1,0 +1,12 @@
+<!-- or use the cdn for mathjax source code -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js">
+  MathJax.Hub.Config({
+    jax: ["input/TeX","output/HTML-CSS"],
+    extensions: ["tex2jax.js"],
+    tex2jax: {
+      inlineMath: [ ['\\(','\\)'] ],
+      displayMath: [ ['$$','$$'] ]
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
