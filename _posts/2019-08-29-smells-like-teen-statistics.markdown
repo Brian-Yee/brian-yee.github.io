@@ -25,14 +25,13 @@ The Problem Setup
 ---------------------------------------------------------------------------------------------------
 
 The problem in which this observation arose was comparing the boxplots of flattened values across
-pairwise matrices. This is simple enough for when the dimension of the pairwise matrix is small as
-the number of flattened values which grows quadratically doesn't matter for small amoutns. However
-some of the results lead to matrices of dimension 1000 which when combined with the number of
-matrices caused an explosion in memory seg-faulting the code. To resolve this memory issue a quick
-fix was to take the mean of the flattened pairwise matrix values and store them in a list for later
-plotting of the boxplot. Box plots were generated for three different algorithms and were plotted
-based on dimensions of the pairwise matrix and used to compare the distribution of flattened
-pairwise values.
+pairwise matrices. This works perfectly well for matrices of small dimensions as the quadratic
+growth of flattened values remains small. However some of the results lead to matrices of dimension
+1000 which when combined with the number of matrices caused an explosion in memory seg-faulting the
+code. To resolve this memory issue a quick fix was to take the mean of the flattened pairwise
+matrix values and store them in a list for later plotting of the boxplot. Box plots were generated
+for three different algorithms and were plotted based on dimensions of the pairwise matrix and used
+to compare the distribution of flattened pairwise values.
 
 A quick justification of this can be arrived at by firing up a REPL and trying out a simple use
 case
@@ -207,18 +206,17 @@ Jeter but over the period of two years Derek Jeter had a higher batting average 
 Follow Your Nose Wherever it Goes
 ---------------------------------------------------------------------------------------------------
 
-I often here the discussion of a [T-shaped skill
-set](https://en.wikipedia.org/wiki/T-shaped_skills) the requirement to have deep knowledge in one
-thing while maintaining a semi-proficiency in other things. Up till now I have mostly envisioned
-the base of the "T" as understanding the jargon of a field to the point where you are not
-intimidated. However it is interesting that we talk about "code smells"<sup>[3](#smell)</sup> but
-not other "smells" we have developed. Statistics, math, physics, linguistics, chemistry, board
-games, personal investing -- certainly smells exist in these fields. The positive descriptors could
-be called: intuition, guts, style, prettiness. The negative descriptors: err, foolish, clunky,
-ugly, bulky. Are all these descriptions just not a personal matter of objective expression? Smell
-seems like such a vulgar term. It invokes the image of a shrewd nose rather than a cute boar
-sniffing out truffles. Perhaps, this perception is solely my own. At the very least I do not have a
-better term to suggest.
+I often hear the need for a [T-shaped skill set](https://en.wikipedia.org/wiki/T-shaped_skills):
+the requirement to have deep knowledge in one thing while maintaining a semi-proficiency in other
+things. Up till now I have mostly envisioned the base of the "T" as understanding the jargon of a
+field to the point where you are not intimidated. However it is interesting that we talk about
+"code smells"<sup>[3](#smell)</sup> but not other "smells" we have developed. Statistics, math,
+physics, linguistics, chemistry, board games, personal investing -- certainly smells exist in these
+fields. The positive descriptors could be called: intuition, guts, style, prettiness. The negative
+descriptors: err, foolish, clunky, ugly, bulky. Are all these descriptions just not a personal
+matter of objective expression? Smell seems like such a vulgar term. It invokes the image of a
+shrewd nose rather than a cute boar sniffing out truffles. Perhaps, this perception is solely my
+own. At the very least I do not have a better term to suggest.
 
 Summary
 ---------------------------------------------------------------------------------------------------
