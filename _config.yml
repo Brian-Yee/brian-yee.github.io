@@ -25,5 +25,5 @@ defaults:
       layout: "default"
 
 # ---------- NON SCRIBBLE DEFAULT ----------
-plugins:
+gems:
   - jekyll-feed
