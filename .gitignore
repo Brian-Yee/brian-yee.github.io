@@ -3,3 +3,4 @@ _site/
 .ruby-version
 
 _tikz_tmp
+.DS_Store
