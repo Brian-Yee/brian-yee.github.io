@@ -17,6 +17,9 @@ links:
   - name:         Curated Links
     url:          /curated-links
     external:     false
+  - name:         Food
+    url:          /food
+    external:     false
 # ------------ CONFIGURABLE END ------------
 
 permalink:        /posts/:title
