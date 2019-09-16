@@ -1,0 +1,317 @@
+---
+title:  Tolstoy, Swiss Cheese & Pass The Unix Password Manager
+date:   2019-09-15 00:00:00
+layout: default
+categories: [""]
+author: Brian Yee
+---
+
+The Anna Karenina Principle
+-------------------------
+
+The first line of Leo Tolstoy's novel Anna Karenina is as follows
+
+>Happy families are all alike; every unhappy family is unhappy in its own way.
+>
+>Anna Karenina ~ Leo Tolstoy
+
+as a masterful writer, Tolstoy uses our emotions and everyday perceptions of life to highlight a
+much more mundane and harsh reality: "_one_ bad trait can otherwise ruin perfection". Indeed this
+statement is so strict so unforgiving we feel at least some intrinsic allergy towards it. One
+defect on a picture our eye is _constantly_ drawn to; one incompatible trait of a past partner that
+is how we remember them now; one imperfection in a skating routine that ruins the judges' score.
+The many ways things can fall from a state of delicate balance can be immense. A mere ~1500 years
+before Tolstoy another eloquent writer commented on this trait in his works the Nicohmachean Ethics
+
+>Again, it is possible to fail in many ways (for evil belongs to the class of the unlimited, as the
+>Pythagoreans conjectured, and good to that of the limited), while to succeed is possible only in
+>one way (for which reason also one is easy and the other difficult – to miss the mark easy, to hit
+>it difficult); for these reasons also, then, excess and defect are characteristic of vice, and the
+>mean of virtue; For men are good in but one way, but bad in many.
+>
+>Nicohmachean Ethics ~ Aristotle
+
+The idea being that there is one true harmonious way forward -- that of the golden mean. A balanced
+state of existence culminating in habituated virtues honed through practice. We all intrinsically
+know this to some degree. Healthy individuals ought to: brush their teeth, drink water throughout
+the day, get sufficient sleep, use a password manager, etc. The amount of creative ways that
+entropy finds a way to manifest ourselves is truly remarkable. We all fall short of Aristotle's
+view of perfection and that's okay. Besides other pointed views of perfection such as
+[Sagehood](https://en.wikipedia.org/wiki/Sage_(philosophy)),
+[Junzi](https://en.wikipedia.org/wiki/Junzi) or a
+[Buddha](https://en.wikipedia.org/wiki/Buddha_(title)). Perfection perhaps, acts more like a
+conceptual North Star, something to be guide our travels but entirely out of reach, far away in
+another dimension. If perfection is not required of an individual then what is?
+
+The Swiss Cheese Model
+----------------------
+
+To attain perfection in life one can have no deficiencies, thus to have no deficiencies means to
+have no deficiencies in any discipline of life. However, as alluded to before entropy is so clever,
+so remarkable, so ingenious that it will find a way to throw a wrench in our gears. To fight
+entropy is impossible, the state space is to large that it will always find a way around our
+attempts by definition. Still entropy is something that exists breadth first seeking unbiasedly to
+raise the disorder in a system rather than penetrate something to it's core and how to prevent
+something from penetrating another thing to it's core has a fairly well discussed topic: that of
+Swiss Cheese.
+
+The Swiss Cheese Model is applied to security of digital systems. It views systems as composed of
+_layers_ of swiss cheese each with their own potential deficiencies but ideally none of which line
+up in all layers. Thus as we add additional layers to our abstract model the _attack vector_ of an
+adversarial agent becomes harder and harder.
+
+[![Diagram of swiss cheese
+model](../images/pass/swiss-cheese.png)](https://en.wikipedia.org/wiki/Swiss_cheese_model#/media/File:Swiss_cheese_model_of_accident_causation.png)
+
+Sometimes it is easier (or perhaps all that is in our control) to add more layers for security than
+invest all our attention on _one thing_ and pray to God that anything doesn't get through. Layers
+of security are measurable, it is nice to see progress made. Finding no more deficiencies in one
+level does not guarantee no deficiencies but rather no more deficiencies that _you_ can find.
+
+One example of this is password-reuse, which system would you rather prefer?
+
+1. An insanely long and complex password reused across all accounts
+2. A different long and medium-strength password for each of your accounts
+
+The problem with the first choice is that often the difference between what takes something a very
+very long time to crack versus a very long time to crack, is still on a timescale totally
+mind-boggling to our human existence. However, if you replicate this password across websites it
+only takes a data breach disclosing your password and credentials to then put all your other
+accounts at harm. If we use different passwords for each account it does not put our other accounts
+in harms way:
+
+>avoiding password reuse avoids a hole in each of our swiss cheese layers that can lead to a
+>catastrophic penetration of our lives
+
+Why do I harp on this even though we all know it? Precisely, because _I knew it_ and still ignored
+it for far to long! I didn't have a solution easy enough that I convinced myself that complex
+mnemonics and mild re-use was okay. Still, part of me knew there must be a better solution out there
+and angst built up until I found my safe-haven: `pass` The Unix Password Manager. The truth is _I_
+didn't find `pass`, somebody _told_ me about `pass` and therefore in an abstract way `pass` found
+me. It's usability and handiness is too useful to not want to pass along to another. So now I am
+here to pass `pass` along to you! Hopefully, I will explain it in a clear and friendly enough
+manner that you are confident to begin using it.
+
+Pass: The Unix Password Manager
+-------------------------------
+
+Now that I have beat the horse to death that we should use a password manager I will go about
+discussing how to set up `pass` an excellent choice for a password manager. To get started lets
+install pass using your package manager of choice for Macs the following works.
+
+```bash
+brew install pass
+```
+
+for the most up to date instructions for installation refer to [the pass
+website](https://www.passwordstore.org/).
+
+### Where are we Going?
+
+The end state of install `pass` is the ability to store, sync, edit and generate your passwords
+efficiently. Suppose you want a password for a new site. You simply launch your terminal and type
+in `pass`
+
+```
+pass generate <ORG>/<SITE>/<USERNAME>
+```
+
+where `<ORG>` is a nested organization scheme you employ, `<SITE>` is the website you wish to
+generate a pass for and `<USERNAME>` is the username of the corresponding site. Let's generate a
+few passwords
+
+```bash
+pass generate work/jira/my_work_email@my_work.ca
+pass generate social/linkedin/linkinpark_4_life_123@hotmail.com
+pass generate social/discord/linkinpark_4_life_123@hotmail.comm
+```
+
+now when we want to see all our emails we type `pass`
+
+```bash
+$ pass
+Password Store
+├── work
+│   └── jira
+│       └── my_work_email@my_work.ca
+└── rep-tiles
+    ├── linkedin
+    │   └── linkinpark_4_life_123@hotmail.com
+    └── discord
+        └── linkinpark_4_life_123@hotmail.com
+```
+
+we can copy our password to the clipboard temporarily for 45 seconds by typing
+
+```
+pass -c social/linkedin/linkinpark_4_life_123@hotmail.com
+```
+
+Where we will be prompted to input a single universal password that completes the action. Easy,
+convenient and safe. Note, the one universal password you use is in a _local_ state not reused
+online. Thus if one account is breached your other accounts remain safe and updating your password
+is as easy as simply generating a new one! Now, someone may be worried about storing all their
+passwords locally. What if the universal password is found out? We mitigate this fear via two ways
+
+1. Take the time to commit to memorizing one big ass(ymptotically) difficult password of a very
+   long length. Various mnemonics, techniques and memory tricks can be used to commit one very
+   crucial long string of characters to memory.
+2. Use RSA encryption and build a trust circle (more on this later)
+
+### RSA & You
+
+Explaining RSA is a bit out of the scope of this blog post. For those unfamiliar we will say that
+it is a [trapdoor function](https://en.wikipedia.org/wiki/Trapdoor_function) and we shall motivate
+it via the following example from the Wikipedia page:
+
+>Consider a padlock and its key. It is trivial to change the padlock from open to closed without
+>using the key, by pushing the shackle into the lock mechanism. Opening the padlock easily,
+>however, requires the key to be used. Here the key is the trapdoor and the padlock is the trapdoor
+>function.
+
+If this motivation is not enough for the reader, further reading can be found
+[here](https://en.wikipedia.org/wiki/RSA_(cryptosystem)). What is important to know in our case is
+that, in using RSA we have two very important things:
+
+1. The safety to upload the contents of our password manager online
+2. A _private key_ on our computer that is used in combination with a _password_ to decrypt the
+   encrypted contents of the password manager. You also have a _public key_ which works in tandem
+   with the private key but can be seen by anyone without compromising your encrypted data.
+
+Now _it is not enough to simply know the password_ you must also know the private key -- these
+effectively means someone needs _direct access to your computer(s) and knowledge of your password_
+to decrypt your password manager.
+
+### Git & Pass
+
+We previously alluded to the fact that we can safely share a public key without putting our
+information at risk. So we're gonna save our copy of pass somewhere online up in
+the clouds away from our local computer that anyone can in theory access -- but again Swiss Cheese
+why make the step available to them when you can throw a password online in front of your private
+key as well? If you don't already [create a personal GitHub account](https://github.com/) and
+secure that with another different big ass(ymptotically) hard password for extra protection. If
+you're new to git talk to someone who is an expert or [take some time to
+read](https://git-scm.com/doc) up on it's basics. The reason why we made a GitHub account was
+because `pass` comes with built in `git` tools for managing your passwords across personal
+devices. Create a private repository and push your password to it. The easiest way to ensure you
+pass your passwords correctly is to check out the documentation on the man page
+
+```
+man pass
+```
+
+in it you will find a long detailed example with `stdout`s of the following commands
+
+```bash
+pass init Jason@zx2c4.com
+pass git init
+pass git remote add origin kexec.com:pass-store
+pass generate Amazon/amazonemail@email.com 21
+pass git push -u --all
+```
+
+in the future if you want to sync up your `pass` database it's as easy as a `git` `push` and
+`pull`. While you're at it why not declare some functions to add to your rc-files to make it even
+easier?
+
+
+```bash
+function pass-pull() {
+    # Pull pass
+    pass git fetch --all
+    pass git pull
+}
+
+function pass-push() {
+    # Push pass
+    pass git push --set-upstream origin master
+}
+```
+
+If you're new to aliases and functions in rc-files, check out my article on [how to manage
+functions and aliases](./2019-08-24-an-alias-for-viewing-your-aliases.markdown).
+
+### Expanding Your Trust Circle
+
+Recall, that the reason why it is safe to upload _an encrypted copy_ of our password manager
+online is that our local computer stores a _private key_ which is part of a three-component system
+to decode our password manager. The question then is what happens when we loose our private key?
+Laptops get stolen, coffee sometimes spills onto hard drives and my cat walks across my keyboard
+constantly launching processes I have never seen before some of which scare the bejesus out of me.
+If we are to retain peace of mind we need to ensure that other devices our set up with private keys
+that are compatible with our _public key_ to decode our version controlled password manager stored
+online. Each device you add a corresponding private key too becomes part of your trust circle,
+devices which can decrypt your password manager and read the contents.
+
+To expand our trust circle we need to do some stuff with the underlying guts of `pass` which is GNU
+Privacy Guard (`gpg`). The part of `pass` that handles all the RSA encryption earlier discussed is
+`gpg`. This `gpg` is responsible for creating and maintaining our _private key_ so that is precisely
+what we will use to move it around. The following instructions come from an excellent write up
+[here](https://www.phildev.net/pgp/gpg_moving_keys.html). The reader is encourage to read it in
+full but I will highlight the four steps required here. Firstly, export a copy of your _private_
+and _public_ key
+
+ ```bash
+gpg --export-secret-keys -a keyid > my_private_key.asc
+gpg --export -a keyid > my_public_key.asc
+ ```
+
+then securely copy over the keys to another computer and import them with
+
+```bash
+gpg --import my_private_key.asc
+gpg --import my_public_key.asc
+```
+
+finally because we are adding keys we need to let `gpg` know where they fall in something called
+our [web of trust](https://en.wikipedia.org/wiki/Web_of_trust). We do this by launching a prompt
+edit for the keys
+
+```bash
+$ gpg --edit-key foo@bar.com
+gpg (GnuPG) 1.4.1; Copyright (C) 2005 Free Software Foundation, Inc.
+This program comes with ABSOLUTELY NO WARRANTY.
+This is free software, and you are welcome to redistribute it
+under certain conditions. See the file COPYING for details.
+
+Secret key is available.
+
+pub  1024D/BEEFF00D  created: 2005-09-05  expires: 2006-09-05  usage: CS
+                     trust: unknown       validity: unknown
+sub  2048g/DEADBEEF  created: 2005-09-05  expires: 2006-09-05  usage: E
+[ unknown] (1). Foo Bar <foo@bar.com>
+
+Command>
+```
+
+and typing in `trust` after which we are met with the following options
+
+```
+Please decide how far you trust this user to correctly verify other users' keys
+(by looking at passports, checking fingerprints from different sources, etc.)
+
+  1 = I don't know or won't say
+  2 = I do NOT trust
+  3 = I trust marginally
+  4 = I trust fully
+  5 = I trust ultimately
+  m = back to the main menu
+```
+
+because it is our own key _from ourselves_ we give it the ultimate trust value of `5`, confirm the
+value and exit out with `quit`.
+
+After running the following commands on a new device. Run the `pass-pull` rc-function above and
+ensure that your password manager is up-to-date. Repeat the process across all devices ass
+necessary. Congratulations, you can now use `pass`!
+
+Summary
+-------
+
+We have discussed how to install, set up and replicate pass across personal devices. It was
+motivated by the need to use a password manager for security online to implement additional layers
+of defense between all websites we use. the concept of pass obviously extends far past just
+passwords and can be used to store additional private details as well if needed. While the task may
+seem intimidating at first, it is important to realize that that anxiety not only subsides after
+working through setting up your password manager but eventually _resolves_ as you begin integrating
+the use of secure tools in your life.
