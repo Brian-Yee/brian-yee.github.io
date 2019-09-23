@@ -153,7 +153,8 @@ horizontal red line between the two.
 This new value has provided us with one iteration and an equivalent starting point as if we had
 begun at the new value of \\(x_1\\) so we can iterate our tracing solution indefinitely
 
-![Constructing a cobweb plot](../images/bifurcation/CobWebConstruction.gif)
+[![Constructing a cobweb
+plot](../images/bifurcation/CobWebConstruction.gif)](../images/bifurcation/CobWebConstruction.gif)
 
 The result is mesmerizing! This is called a **cobweb plot** and we can see that for the case of
 \\(\left(x_0=0.2, r=1\right)\\) our system does converge to a value of approximately
@@ -164,7 +165,8 @@ parameter. This tunable parameter allows us to vary the intersection by changing
 with our new knowledge of cobweb plots we can observe the behaviour of the cobweb as we vary
 \\(r\\).
 
-![Example of Chaos in the Logistic CobWeb ](../images/bifurcation/LogisticCobWebChaos.gif)
+[![Example of Chaos in the Logistic CobWeb
+](../images/bifurcation/LogisticCobWebChaos.gif)](../images/bifurcation/LogisticCobWebChaos.gif)
 
 The answer to are all intersections of \\(f\\) and \\(g\\) attractors is a resounding "No!". Some
 crazy stuff went down around \\(r \sim 3\\). Furthermore for \\(r > 3\\) there appeared to be two
