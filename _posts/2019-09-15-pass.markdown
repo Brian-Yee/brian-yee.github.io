@@ -1,5 +1,5 @@
 ---
-title:  Tolstoy, Swiss Cheese & Pass The Unix Password Manager
+title:  Tolstoy, Swiss Cheese and Pass The Unix Password Manager
 date:   2019-09-15 00:00:00
 layout: default
 categories: [""]
