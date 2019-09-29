@@ -79,7 +79,9 @@ $$
 both of these are simple and readily plotable, we have added a value \\(r\\) to add one tunable
 parameter to play with. Plotting values for \\(r = 1\\)
 
-![System of equations for the logistic function](../images/bifurcation/cobweb-0.png)
+<p style="text-align:center">
+    <img alt="System of equations for the logistic function" src="../images/bifurcation/cobweb-0.png">
+</p>
 
 We then make them _dynamic_ by feeding in the output of one into the other
 
@@ -142,19 +144,25 @@ The first thing to note is that there is a __visual_ interpretation of our recur
 choose some starting point \\(x_0\\) and can show the relation of it by drawing a vertical red line
 between it and the value on the full curve of the RHS.
 
-![Iteration one of logistic cobweb](../images/bifurcation/cobweb-1.png)
+<p style="text-align:center">
+    <img alt="Iteration one of logistic cobweb" src="../images/bifurcation/cobweb-1.png">
+</p>
+
 
 We next note that this value is equal to our next starting point \\(x_{n+1}\\) given our _output_
 (\\(y\\)-axis) is equal to our _input_ (\\(x\\)-axis) we can encode this relation by drawing a
 horizontal red line between the two.
 
-![Iteration two of logistic cobweb](../images/bifurcation/cobweb-2.png)
+<p style="text-align:center">
+    <img alt="Iteration two of logistic cobweb" src="../images/bifurcation/cobweb-2.png">
+</p>
 
 This new value has provided us with one iteration and an equivalent starting point as if we had
 begun at the new value of \\(x_1\\) so we can iterate our tracing solution indefinitely
 
-[![Constructing a cobweb
-plot](../images/bifurcation/cobweb-construction.gif)](../images/bifurcation/cobweb-construction.gif)
+<p style="text-align:center">
+    <img alt="Constructing a cobweb plot" src="../images/bifurcation/cobweb-construction.gif">
+</p>
 
 The result is mesmerizing! This is called a **cobweb plot** and we can see that for the case of
 \\(\left(x_0=0.2, r=1\right)\\) our system does converge to a value of approximately
@@ -165,8 +173,9 @@ parameter. This tunable parameter allows us to vary the intersection by changing
 with our new knowledge of cobweb plots we can observe the behaviour of the cobweb as we vary
 \\(r\\).
 
-[![Example of Chaos in the Logistic CobWeb
-](../images/bifurcation/logistic-cobweb-chaos.gif)](../images/bifurcation/logistic-cobweb-chaos.gif)
+<p style="text-align:center">
+    <img alt="Example of Chaos in the Logistic CobWeb" src="../images/bifurcation/logistic-cobweb-chaos.gif">
+</p>
 
 The answer to are all intersections of \\(f\\) and \\(g\\) attractors is a resounding "No!". Some
 crazy stuff went down around \\(r \sim 3\\). Furthermore for \\(r > 3\\) there appeared to be two
