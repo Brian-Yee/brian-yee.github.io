@@ -1,0 +1,356 @@
+---
+title:  On the Lost Innocence of Recursion
+date:   2019-10-06 00:00:00
+layout: default
+categories: [""]
+author: Brian Yee
+---
+
+# The Occult Lambda
+
+Functional programmers have a reputation for being a bit evangelist or occultish. Many people will
+argue that any subject in general will have its die-hard advocates claiming it is the one-true way
+but this absolves any responsibility or credence to the facts presented in that argument.
+Arguments claiming that "everyone" does something, halts a discourse by putting forth a statement
+that at simulatenously provides _no-one_ as a piece of evidence. The "general" knowledge claimed
+comes to be known from "the industry" but when pushed for anecdotal support drawn from their life
+the claims are usually a friend-of-a-friend-said or that while they know no-one everyone knows this.
+So when I say "Functional programmers have a reputation for being a bit evangelist or occultish." I
+really do mean that in my life-experience I have found functional programmers to be a bit
+evangelist or occultish. The PhDs, Post-Docs, colleagues, even [popular functional website
+tutorials]() I have worked with overtime have often shrouded the functional paradigm in a sort of
+mysticism that has either _clicked_ or not.
+
+That is why, semi-recently while eating my lunch at work when I commented "Hey I like your shirt."
+to on an older individual's t-shirt from IT department wearing a plain dark-gray t-shirt with a
+yellow lambda visibly printed where a breast-pocket would normally lie... I was not terribly
+surprised when he responded with "Ah I see you are versed in the holiness of the lambda". So once
+again I found myself faced with such occultish reverence that I have simply never understood in all
+my years of knowing people who know functional program requiring me to explain that I do not
+actually _grok_ functional programming I simply use emacs and make use of comprehensions in Python.
+A then half hour conversation unfolded with much interesting discussion about lambda-calculus, the
+early days of Netscape and the history of JavaScript, writing compilers in Lisp but ended
+differently with me being introduced -- no more accurate to say recommended -- _Structure and
+Interpretation of Computer Programs_ as it was the book that helped functional programming really
+"click" for the IT guy.
+
+# Pascal's Triangle
+
+A quick Wikipedia search of [_Structure and Interpretation of Computer
+Programs_](https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs) (SICP)
+will direct you to a page that makes all the occultish tendencies of functional programmers obvious
+in hindsight. A seminal textbook in the field it discuss wizards (programmers) who cast spells
+(procedures) to summon spirits (processes) in arcane languages (lisp) and is even called to as (and
+redirected from) "The Wizard Book". Enticed I decided to make an honest attempt at reading the book
+and I have to say
+
+>The Wizard Book is simply delightful.
+
+It has far exceeded my expectations of what I had going in and has been an immense pleasure to read
+so far, as of a little over 100 pages (out of 700) into it. For the first-time in a while I truly
+felt like a student again, entranced by a new subject and eagerly wanting to devour a textbook. So
+far the wizard stuff is honestly only the first few pages. After that it discusses ways to conceive
+of computer programs and deriving all the things I have taken for granted such as `for`-loops being
+well steeped in the imperative-paradigm style of programming as manifestations of recursive
+definitions available for a computer to interpret. Something I _never_ learned in my very first
+`CS100` course in the old church building of my undergraduate university, contrarily from the class
+I remembered recursion being deemed as a bad thing with exponential growth of operations required
+for simple tasks like computing Fibonacci sequences<sup>[1](#memo)</sup>. I never thought of
+recursion as a way of _defining_ procedures which can still be run in linear time.
+
+So much had I not practiced recursion that I found myself _genuinely frustrated_ at exercise 1.11
+when asked to create a procedure for calculating Pascal's Triangle. For the unfamiliar Pascal's
+Triangle is an arrangement of numbers in the shape of a triangle
+
+<p style="text-align:center">
+    <img alt="Gif animation of the construction of Pascal's triangle" src="../images/pascal/construction-of-pascals-triangle.gif">
+</p>
+
+It is traditionally introduced by pointing out that each element is constructed by adding the
+number above an element to it's left and right. As a byproduct of the Canadian curriculum I can at
+the very least say I was exposed to it as early as Grade 9. It has various properties such as being
+the coefficients of a binomial expansion or each row mappable to the value of the powers of `11`.
+Pascal's Triangle and I go further than what I was introduced to in Grade 9 though. In Grade 11
+while doodling and playing with it over multiple Advanced Functions classes bored out of my mind I
+derived the expression for binomial coefficients
+
+$$
+f(x, y) = \frac{(x + y)!}{x!y!}
+$$
+
+which was such a big deal to my young self that it's still one of my fondest memories of my teenager
+years. The way this equation is expressed here is for generating diagonal slices of the triangle,
+generally it is rewritten in the form of the row number and columns across the row as
+
+$$
+{n\choose k} = \frac{n!}{k!\left(n - k\right)!}
+$$
+
+pronounced "n-choose-k" and indeed the [Wikipedia page for n-choose-k
+redirects](https://en.wikipedia.org/wiki/N_choose_k) to the binomial coefficients.With that
+knowledge of it's declarative form one could define a recursive formula for a factorial and then
+plug it into the formula above to satisfy the requirements of the exercise but that feels hacky and
+in poor taste. Instead, I focused on finding a more proper solution by visualizing the values of the
+triangle in an array
+
+```
+      col
+      0 1 2 3 4 5
+row + -----------
+  0 | 1 0 0 0 0 0
+  1 | 1 1 0 0 0 0
+  2 | 1 2 1 0 0 0
+  3 | 1 3 3 1 0 0
+  4 | 1 4 6 4 1 0
+```
+
+and writing the skeleton of a recursive relation which is almost a literal translation of what we
+are told. The element is the sum of the two elements before it
+
+```scheme
+(define (pascal row col)
+  ...
+  (+
+   (pascal (- row 1) col)
+   (pascal (- row 1) (- col 1))))
+```
+
+where `...` denotes some stopping criteria I had to find. It is obvious that first column is always
+filled with the value `1` and any case where \\(\text{col} > \text{row}\\) is equal to `0`. For
+safety we can also report that any "negative" column is non-sensical<sup>[2](#gamma)</sup> and set
+them equal to `0` as well.
+
+``` scheme
+(define (pascal row col)
+  (cond ((= col 0) 1)
+        ((< col 0) 0)
+        ((> col row) 0)
+        (else (+
+               (pascal (- row 1) col)
+               (pascal (- row 1) (- col 1))))))
+```
+
+and that's it. The solution is so painfully simple I had a hard time believing it took me a few
+minutes to come up with. The moral of this story being that one can achieve a reasonable amount of
+proficiency and still be stumped with simple use-cases when asked to not resort to their usual
+tools. While I am far from a functional programmer I did, in fact, feel a little click as I wrote
+out the function above. One that perhaps maybe just maybe **recursive definitions are not evil or
+hard but a natural way to view computers**? I will not claim it is the _best_ way to view computers
+only that it very well may be a very natural way to view computers. That is to say that the view of
+recursion I had formed as only occurring in interviews or of poor efficiency were of an ungrounded
+bias. How many problems have I limited myself to by unconsciously assuming everything must be an
+imperative procedure?
+
+Refactor
+========
+
+Now comes the unintended and **ironical twist** of what I set I initially set out to be a simple
+quick Sunday post. While writing this post and about my imperative algorithmic solving biases
+
+>Even while formulating the problem definition I had an imperative bias
+
+The part of this post where I talk about the two versions of writing the binomial coefficients which
+are equivalent except for a change of basis that either slices horizontally/vertically or
+diagonally/anti-diagonally I realized I had originally written Pascal's Triangle in the "n-choose-k"
+by choosing my recursive coordinates to fall on a system of _rows_ and _columns_ rather than
+_diagonals_ or _anti-diagonals_. With the idea of aiming for a recursive procedure we re-write our
+formulation to more clearly expose the terminating conditions of the problem.
+
+```
+       anti-diag
+       0 1 2 3 4
+diag + ---------
+   0 | 1 1 1 1 1
+   1 | 1 2 3 4
+   2 | 1 3 6
+   3 | 1 4
+   4 | 1
+```
+
+and a beautiful symmetrical form of the procedure arises with an additional conditional dropping out.
+
+```scheme
+(define (pascal diag anti-diag)
+  (cond ((= diag 0) 1)
+        ((= anti-diag 0) 1)
+        (else (+
+               (pascal (- diag 1) anti-diag)
+               (pascal diag (- anti-diag 1))))))
+```
+
+**but is this not of a suspicious form?** Adding two things and terminating on `0` itself? Have we
+not heard of this all too often? If it smells like a Fibonacci sequence it's because it _is_ the
+Fibonacci sequence!
+
+```scheme
+(define (fibonacci int)
+  (cond ((= int 1) 0)
+        (else (+
+               (fibonacci (- int 1))
+               (fibonacci (- int 2))))))
+```
+
+and if we can go down what stops us from going up?
+
+```scheme
+; 3-Dimensional Pascal's Triangle (aka a triangular based pyramid)
+(define (3d-pascal i j k)
+  (cond ((= i 0) 1)
+        ((= j 0) 1)
+        ((= k 0) 1)
+        (else (+
+               (3d-pascal (- i 1) j k)
+               (3d-pascal i (- j 1) k)
+               (3d-pascal i j (- k 1))))))
+```
+
+certainly I can't be the first to think of this and our geometry intuition tells us it would be
+should be named the 3D analogue of a triangle -- aka a pyramid. We have organically found a form at
+arriving to [Pascal's
+Pyramid](https://en.wikipedia.org/wiki/Pascal%27s_pyramid#/media/File:Pascalsche.Pyramide.png).
+
+[![The first five layers of Pascal's
+Pyramid](../images/pascal/pyramid.png)](https://en.wikipedia.org/wiki/Pascal's_pyramid#/media/File:Pascalsche.Pyramide.png)
+
+We have now formulated our thoughts for the cases of two, one and three, which if you are familiar
+of the work of Gammow's delightful book _[One Two Three
+Infinity](https://en.wikipedia.org/wiki/One_Two_Three..._Infinity)_. We should boldly generalize
+further and take a stab at the arbitrary case.
+
+```scheme
+(define (nd-pascal i j k ... n)
+  (cond ((= i 0) 1)
+        ((= j 0) 1)
+        ...
+        ((= n 0) 1)
+        (else (+
+               (nd-pascal (- i 1) j ... n)
+               (nd-pascal i (- j 1) ... n)
+               ...
+               (nd-pascal i j ... (- n 1))))))
+```
+
+which again we use our intuition from geometry that the analogous n-dimensional version of a
+Pascal's triangle ought to be called Pascal's Simplex and indeed a [Wikipedia
+Page](https://en.wikipedia.org/wiki/Pascal%27s_simplex) named thus so. However upon reading that
+Wikipedia Page we realize that our first intuition of Fibonacci was unfounded, indeed in our
+formulation the pattern held for the 1-simplex a series of 1-values rather than the value of the
+integer itself. Such a result should be obvious in hindsight the coefficient of \\(x^n\\) is always
+\\(1\\) not the Fibonacci sequence! Nonetheless, the temptation to generalize Pascal's Triangle lead
+to an incorrect contraction, correct expansion and then self-correcting contraction to the regular
+case. Such is the process of learning.
+
+A Final Contribution
+====================
+
+The translation from our first view of the "n-choose-k" to the more organic basis to lead to the
+discovery of Pascal-Simplex demonstrates a mapping from one to another
+
+```
+      col                        col                       anti-diag
+      0 1 2 3 4                  0 1 2 3 4                 0 1 2 3 4
+row + ----------           row + ----------         diag + ---------
+  0 | 1 0 0 0 0              0 | 1 x x x x             0 | 1 1 1 1 1
+  1 | 1 1 0 0 0     -->      1 | 1 1 | | |    -->      1 | 1 2 3 4
+  2 | 1 2 1 0 0              2 | 1 2 1 | |             2 | 1 3 6
+  3 | 1 3 3 1 0              3 | 1 3 3 1 |             3 | 1 4
+  4 | 1 4 6 4 1              4 | 1 4 6 4 1             4 | 1
+```
+
+this suggests a mapping between the choose form and Pascal Simplex form can be created by
+subtracting the \\(k\\)-value (row) from the \\(n\\)-value (col) to recover the simplex form.
+
+```scheme
+(define (pascal i j)
+  (cond ((= i 0) 1)
+        ((= j 0) 1)
+        (else (+
+               (pascal (- i 1) j)
+               (pascal i (- j 1))))))
+
+(define (choose n k)
+  (pascal (- n k) k)))
+```
+
+Indeed if we use the declarative definitions discussed prior
+
+$$
+\frac{(x + k)!}{x!k!} = \frac{((n - k) + k)!}{(n - k)! k!} = \frac{n!}{k!(n - k)!}
+$$
+
+With this new found knowledge we see an alternate to identify the binomial coefficient without the
+use of a factorial. Is this of us to anyone? That is not so much for me to decide as for others. As
+such I threw the solution into a perceived gap on [Rosetta
+Code](https://web.archive.org/web/20191006163951/https://rosettacode.org/wiki/Evaluate_binomial_coefficients).
+At best it may help someone at worst it will generate a helpful discussion of Scheme at a deeper
+level than I could of ever anticipated learning when setting out to solve the SICP exercise
+problem.
+
+The Click
+=========
+
+Will knowing how to write a generalized version of Pascal's Triangle recursively alone make me a
+better programmer? Most probably not. Is this part of a journey that will help make me an even
+better programmer eventually? Hopefully so. Regardless it is still a joy to find a problem so
+elementary and simple out there that it can stump you. Is this post more for me than you? Yes and
+no. As individuals become increasingly good at their profession there seems to be a loss of
+innocence which occurs. Things are no longer done because they are "fun" or "interesting" but
+because they are considered _useful_. Indeed we should aim to do things of use when hired in fair
+exchange for our salaries/compensations but believing that professional success as an individual
+comes from focusing only on efficiency seems myopic and a recipe for burn-out. The things over my
+career as a programmer that have stuck with me are twofold: shipping a core feature to prod and
+having something _click_. So, in a way, this post is for me in that it reminds me not all posts need
+to be "impressive" and it is for you to remind you that there are things out there to-be-clicked
+someday. As Richard Feynman said
+
+> ["It has to do with curiosity!"](https://www.youtube.com/watch?v=lmTmGLzPVyM)
+
+It is easy to forget the joy of doing one's craft when we master a set of tools
+and forget to keep nurturing that curiosity at the sake of efficiency. Is the joy not the racing of
+a beating heart as you formulate guesses and find them verified each time? Do I **need** to have
+this new-found appreciation for a simple mathematical curiosity be related back and leveled-down to
+the use of it in recursive interview questions? No! On winning the Nobel Prize Feynman noted
+
+> [I’ve already got the prize... the prize is in the pleasure of finding the thing out... the kick
+> in the discovery... the observation that other people use it... those are the real
+> things.](https://www.youtube.com/watch?v=Dkv0KCR3Yiw)
+
+When I was a younger physicist I adored Feynman -- no -- like many I _revered_ him. I learned and
+learned and never thought of what employability meant. Then I did my first MSc and the need _to put
+bread on the table became a very real fact_ and I rejected that what I had known before was wrong.
+That employability was an understandable game and I could get better the tricks of it. I did a
+second MSc one with a "professional" focus to get me ready for the "real-world" and succumbed to the
+disillusion that everyone _was_ looking at your LinkedIn profile, that everyone _cares_ about what
+job you have that bread on the table is the wrong metric and it should rather be cars in the garage
+or houses appreciating value... in the past half year the pendulum seems to be swinging back to my
+younger self. The simple joy of studying Pascal's Triangle, the requirement of learning not to be
+shackled by what industry expects and falling prey to the trap of [Goodhart's
+Law](https://en.wikipedia.org/wiki/Goodhart%27s_law) in Economics... indeed the pendulum has swung
+back to the simple joys before but held in a more complex and appreciative view. Perhaps sometimes
+the greatest thing one gets from learning is not something new to show off to others but to hold
+something old, dear and close once again. I do not know if it a contradiction to say that my younger
+self was right for the wrong reasons and my older self was wrong for the right reasons. All is known
+is that -- as with everything -- there is a balance and the space is so multi-dimensional that no
+firm stance no prior belief is likely as correct _as the motion_ of this dampened pendulum of life
+learning oscillating between.
+
+
+Conclusion
+==========
+
+Reading [_Structure and Interpretation of Computer
+Programs_](https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs) has been
+nice. I set out to write a simple blog post about an exercise in it and it snowballed
+unintentionally to a mathematics rabbit-hole and the thoughts on the motivation for learning.
+
+Footnotes
+=========
+
+<sup>[1](#memo)</sup>Without even so much as a discussion of memoization but alas perhaps I was either too young to
+remember or too fresh to comprehend a passing comment. This does however not change the fact that I
+left that class thinking recursion was bad.
+
+<sup>[2](#gamma)</sup> Not so! If we take the declarative function definition rather than the
+imperative definition it is obvious that the factorials can be extended to negative values via the
+[gamma function](https://en.wikipedia.org/wiki/Gamma_function). Still for the purpose of this
+exercise we will choose to set it equal to zero.
