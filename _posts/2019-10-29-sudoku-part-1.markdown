@@ -9,6 +9,8 @@ author: Brian Yee
 **Full code to tinker and play with is available on
 [GitHub](https://github.com/Brian-Yee/montecarlo-sudoku)**
 
+**This is part 1 of the series. Check out [Part 2 Here](sudoku-part-2)!**
+
 Background
 ==========
 
