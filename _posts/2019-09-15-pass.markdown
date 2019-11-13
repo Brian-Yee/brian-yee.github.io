@@ -134,7 +134,7 @@ Password Store
 ├── work
 │   └── jira
 │       └── my_work_email@my_work.ca
-└── rep-tiles
+└── social
     ├── linkedin
     │   └── linkinpark_4_life_123@hotmail.com
     └── discord
