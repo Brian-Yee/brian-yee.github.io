@@ -6,6 +6,9 @@ categories: [""]
 author: Brian Yee
 ---
 
+**Full Code to Tinker and Play with
+[Here](https://github.com/Brian-Yee/swift-conway-game-of-life)**
+
 Demos, Goodhart, Celine & You
 =============================
 
