@@ -1,0 +1,214 @@
+---
+title:  Hook, Line and Tinker -- How to Get Started with Git Hooks
+date:   2019-11-30 00:00:00
+layout: default
+categories: [""]
+author: Brian Yee
+---
+
+Hook Me Up Scotty
+=================
+
+Recently during a pull request round with one of my colleagues at work, I forgot to resolve some
+TODO tags I had left in a file. For programmers unfamiliar with these tags they are left behind as
+things are noticed that are important but for whatever reason cannot be immediately resolved. This
+could be as obvious as going down a code path and noticing something along the way, or as inobvious
+as trying to debug something but then having to fix your Docker image because for some reason the
+whale is throwing a tantrum. In emacs these tags are automatically color coded when left in
+comments for any language to make them more pronounced. This helps to address one of the [valid
+issues](https://www.benkuhn.net/syntax) raised by programmers who forgo syntax highlighting --
+comments are often faded out but comments should be used sparingly because they can lead to comment
+drift as they are a non-executable. Note how much more they stand out then a regular comment below
+
+<p style="text-align:center">
+    <img alt="Example of comment tags" src="../images/hooks/tags.png">
+</p>
+
+Nonetheless, sometimes even though they stand out they can still be forgotten. Luckily, even if
+they are forgotten in the PR process someone will be able to point them out as they lay fresh eyes
+on the code. But that's not good enough! If I can catch the tags before I submit a PR then that's
+one less thing I need somebody to catch and more time to focus on less obvious, potentially more
+nuanced improvements I can make to improve my code. Which is why when I forgot to catch my tags. I
+created a simple git hook to yell at me if I forgot anything and refuse a push.
+
+Hook, Line and Tinker
+=====================
+
+Getting started with git hooks is as easy as writing a few lines and a bit of tinkering for
+familiarization. All hooks are stored in the transparently named `hooks` directory within `.git`.
+
+```
+🌊 ls -l .git/hooks
+total 96
+-rwxr-xr-x  1 <user>  staff   478B <datetime> applypatch-msg.sample
+-rwxr-xr-x  1 <user>  staff   896B <datetime> commit-msg.sample
+-rwxr-xr-x  1 <user>  staff   3.2K <datetime> fsmonitor-watchman.sample
+-rwxr-xr-x  1 <user>  staff   189B <datetime> post-update.sample
+-rwxr-xr-x  1 <user>  staff   424B <datetime> pre-applypatch.sample
+-rwxr-xr-x  1 <user>  staff   1.6K <datetime> pre-commit.sample
+-rwxr-xr-x  1 <user>  staff   1.3K <datetime> pre-push.sample
+-rwxr-xr-x  1 <user>  staff   4.8K <datetime> pre-rebase.sample
+-rwxr-xr-x  1 <user>  staff   544B <datetime> pre-receive.sample
+-rwxr-xr-x  1 <user>  staff   1.5K <datetime> prepare-commit-msg.sample
+-rwxr-xr-x  1 <user>  staff   3.5K <datetime> update.sample
+```
+
+Each of these sample git hooks will be run at the time of what their filename indicates when
+`sample` is removed. This means that none of the sample Git hooks are run because none of them have
+an valid name as `.sample` is appended on the end of what each valid name would be. We wish to
+create hook to run pre-commit. So we will create and edit a `pre-commit` hook.
+
+To ensure reproducability we will create a `Makefile` that creates issues that should be caught.
+Furthermore, we will not only be checking that we did not miss writing any tags but that we also
+[black](https://github.com/psf/black) standardized our python code. We'll write the following
+`Makefile`
+
+```make
+.PHONY: help
+help:
+	@echo "build      Construct repository to violate git hook."
+	@echo "resolve    Resolve any issues caught by git hook."
+	@echo "clean      Remove any artifacts"
+
+.PHONY: build
+build:
+	echo "TO""DO catch this" > todo.md
+	echo "x =  1" > python.py
+
+.PHONY: resolve
+resolve:
+	echo "Caught this" > todo.md
+	echo "x = 1" > python.py
+
+.PHONY: clean
+clean:
+	rm -f todo.md python.py
+```
+
+and execute it to set up our directory
+
+```
+🌊 make build
+echo "TO""DO catch this" > todo.md
+echo "x =  1" > python.py
+🌊 tree -a -L 1
+.
+├── .git
+├── Makefile
+├── pre-commit
+├── python.py
+└── todo.md
+
+1 directory, 4 files
+```
+
+Now that we have a structure to test let's write the hook. A hook need not be a shell or bashscript
+it can be any executable language you like, for our language of choice we will use a
+[shebanged](https://en.wikipedia.org/wiki/Shebang_(Unix)) Python script by ensuring the first line
+is directed towards an executable and enhancing it's permissions.
+
+```
+🌊 echo "#!/usr/local/bin/python3" > .git/hooks/pre-commit
+🌊 chmod +x .git/hooks/pre-commit
+```
+
+Now we can just edit as we want. I've abstracted the core logic of checking for outstanding tags as
+well as identifying unstyled black code into two functions.
+
+
+```python
+def outstanding_tags():
+    """
+    Returns an error message if a file with an outstanding tag is found.
+
+    Returns:
+        str | None
+            Returns an error msg if any found.
+    """
+    cmd = ["grep", "-r", "TODO", "."]
+    matches = subprocess.check_output(cmd).decode("utf-8").split("\n")
+
+    exempt_file_substrs = ["flycheck", ".git/hooks", "pre-commit"]
+
+    fpaths = [
+        x.strip() for x in matches if all(y not in x for y in exempt_file_substrs)
+    ]
+
+    fpaths = [x for x in fpaths if x]
+    if not fpaths:
+        return None
+
+    return "\t" + "\n\t".join(fpaths)
+
+
+def unstyled_black():
+    """
+    Returns an error message if a file could be black formatted.
+
+    Returns:
+        str | None
+            Returns an error msg if any found.
+    """
+    cmd = ["black", "--diff", ".", "--quiet"]
+    output = subprocess.check_output(cmd).decode("utf-8")
+
+    if not any(line.startswith("---") for line in output.split("\n")):
+        return None
+
+    return "\tBlack violation(s) detected"
+```
+
+
+I then write some boiler plate code to wrap our two functions together that I will omit for brevity
+but can be found recorded in a repository [here](). It shall suffice to say that the boiler plate
+code does the following
+
+1. Unobtrusively tell me we are running the commit.
+2. Print any outstanding violations.
+3. Raise a system error if any violations were found.
+
+Let's take a look at it in action. A quick note I have the following aliases employed in the gif
+
+```
+alias a='git add'
+alias c='git commit -m'
+alias s='git status'
+```
+
+You can read more about my aliases, which includes an alias for listing all your aliases in
+[this post](2019-08-24-an-alias-for-viewing-your-aliases)
+
+<p style="text-align:center">
+    <img alt="Example of git hook halting commit." src="../images/hooks/git-hook-example.gif">
+</p>
+
+As we can see the commit was halted when the issues were unresolved. As a bonus, the error message
+for tag violations also wrote out where the tag violations were. After resolve these violations the
+commit can pass through.
+
+Shouldn't Standard Tooling Already Solve this?
+==============================================
+
+Some of you who use TODO's may of noticed something a bit suspicious with this writeup. **Am I not
+reinventing the wheel?**. If I have a `TODO` in my code and I am using `black` as a standard
+formatter what are the chances I'm not using `pylint`? If I'm using `pylint` doesn't that catch
+`TODO`s? The answer is yes and no: `pylint` will definitely catch `TODO`s in Python code but not if
+the `TODO` is in a markdown file as in this example. Still the point of this post is not to say
+that git hooks are an end-all solution. Like everything in the programmer's toolbox they are but
+one of many potential solutions for one of many potential nuanced use-cases that can arise.
+Besides, it is helpful to understand how some of the standard tooling is/can be built.
+
+
+Summary & Conclusion
+====================
+
+We have seen how git hooks can be used to aid your work-flow, applying them to a specific real
+world case of identifying tags accidentally forgotten as well as committing unstandardized code. Of
+course everything should be taken in moderation. You may not care if your code is standardized or
+not when you are pushing `fixup`s. However, ignoring hooks is as easy as passing a `-n` flag to the
+commit. Furthermore, the knowledge of hooks can be extended to server-side and client-side
+applications. While we may have exceptions to the hooks as alluded to above it would be very nice
+if a team adopts a standard style such as [black](https://github.com/psf/black) to have a
+server-side hook to ensure all files are standardized or no `fixup`s were accidentally left in the
+PR when merged to `master`. Conceptually what has been learned here is extremely similar to what
+can be applied there. So if this is newfound knowledge why not go ahead and get hooking!
