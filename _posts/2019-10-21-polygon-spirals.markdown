@@ -65,9 +65,8 @@ Furthermore, spirals can be joined to calculate more mathematically fun properti
 </p>
 
 For example the shaded region of the polygon wedge is a rep-4-tile that can tessellate the plane in
-a very special manner. You can refer to my [prior post on
-this](2019-09-02-beautiful-rep-tiles.markdown) for more information on rep-tiles and their specific
-properties which are interesting in and of themselves.
+a very special manner. You can refer to my [prior post on this](beautiful-rep-tiles) for more
+information on rep-tiles and their specific properties which are interesting in and of themselves.
 
 Construction
 ============
