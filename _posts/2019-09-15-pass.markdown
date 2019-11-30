@@ -229,7 +229,7 @@ function pass-push() {
 ```
 
 If you're new to aliases and functions in rc-files, check out my article on [how to manage
-functions and aliases](./2019-08-24-an-alias-for-viewing-your-aliases.markdown).
+functions and aliases](an-alias-for-viewing-your-aliases).
 
 ### Expanding Your Trust Circle
 

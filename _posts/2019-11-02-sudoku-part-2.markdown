@@ -270,8 +270,8 @@ x_{i+1} = Px_i
 $$
 
 Astute readers of this blog may note the self-recurrence notation previously employed in the post
-about [Chaos Theory](2019-09-16-bifurication.markdown) and realize that we can identify the
-_steady state_, by substituting the equation into itself
+about [Chaos Theory](bifurication) and realize that we can identify the _steady state_, by
+substituting the equation into itself
 
 $$
 \begin{align}
@@ -452,7 +452,7 @@ immediately following the values of the cells in the respective row or column.
     <img alt="Gif of multiple restarts of a metropolis hastings simulation of a sudoku board" src="../images/sudoku/mcmc-sudoku-terminal.gif">
 </p>
 
-We can observe that unlike our previous [backtracking algorithm](sudoku-part-1.markdown) every run
+We can observe that unlike our previous [backtracking algorithm](sudoku-part-1) every run
 of the program takes a random configuration to the path. While this may seem inefficient for small
 sudoku systems. They help us to solve generalized sudoku systems that have a space that is too
 large to be made tractable by the backtracking algorithm. Generalized sudoku systems interlock
@@ -495,9 +495,9 @@ stochastic state space search over exhaustive methods.
 Summary & Next Part
 ===================
 
-We reviewed the data-structures originally outlined in the [previous post](sudoku-part-1.markdown)
-in preparation for using them to solve a sudoku system using a Markov Chain Monte Carlo method.
-Both Markov chains and Monte Carlo methods were motivated and how they can be combined at a surface
+We reviewed the data-structures originally outlined in the [previous post](sudoku-part-1) in
+preparation for using them to solve a sudoku system using a Markov Chain Monte Carlo method. Both
+Markov chains and Monte Carlo methods were motivated and how they can be combined at a surface
 level to form the Metropolis Hastings Algorithm. We frame the sudoku problem in terms of a system
 that can be minimized by the Metropolis Hastings Algorithm and observed the behaviour of the system
 as it converged to a solution. Our work was rewarded by combining all that we've learned to solve a

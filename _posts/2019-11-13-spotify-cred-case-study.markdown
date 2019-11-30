@@ -13,11 +13,11 @@ Over the long weekend I found myself playing with the Spotify API to programatic
 some playlists which I plan to discuss in a future post. For now, I would like to touch base with
 my blog by discussing part of that project, specifically the aspect in which I securely store
 credential files to log into Spotify's API with. The reader is strongly encouraged to first review
-my post on using [pass](2019-09-15-pass.markdown), "The Unix Password Manager" that uses Gnu
-Privacy Guard (GPG, hereafter referred to by its alias `gpg`) for secure password storage. Not only
-because you should be using a password manager and `pass` is a fantastic option but because it
-discusses the Swiss Cheese Model of security and why it's important for any application to _layer_
-defences against malicious agents.
+my post on using [pass](pass), "The Unix Password Manager" that uses Gnu Privacy Guard (GPG,
+hereafter referred to by its alias `gpg`) for secure password storage. Not only because you should
+be using a password manager and `pass` is a fantastic option but because it discusses the Swiss
+Cheese Model of security and why it's important for any application to _layer_ defences against
+malicious agents.
 
 In this post, I will be outlining another use of `gpg` for securely storing and distributing
 sensitive information: `git-crypt`. We will see that by applying a smudge filter before and after
@@ -57,8 +57,8 @@ GITCRYPTKEY ��K��X��(��B�?/8�0ٮ�(W�}�@��@\[�>�
 Neat so a new folder called `git-crypt` was made within `.git` and it instantiated itself with a
 default key via our `init` command. Next we would like to add our key to the key-ring to expand the
 trust circle to include ourselves. Doing this is easy since you definitely read the post on
-[pass](2019-09-15-pass.markdown) before this one as suggested in the first paragraph on this post!!
-Let's take a look at our `gpg` keys.
+[pass](pass) before this one as suggested in the first paragraph on this post!! Let's take a look
+at our `gpg` keys.
 
 ```
 🌊 gpg -k
@@ -155,7 +155,7 @@ juicy secret
 I would like to stress again that the only people that can unlock the credentials are people who
 you have explicitly added via the `git-crypt add-gpg-user` command via an individual already in the
 trust circle. For more information on this please refer to a discussion of `gpg` in my previous
-post about [pass](2019-09-15-pass.markdown).
+post about [pass](pass).
 
 Summary
 =======

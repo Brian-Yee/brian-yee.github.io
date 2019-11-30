@@ -176,7 +176,7 @@ alias s='git status'
 ```
 
 You can read more about my aliases, which includes an alias for listing all your aliases in
-[this post](2019-08-24-an-alias-for-viewing-your-aliases)
+[this post](an-alias-for-viewing-your-aliases)
 
 <p style="text-align:center">
     <img alt="Example of git hook halting commit." src="../images/hooks/git-hook-example.gif">
