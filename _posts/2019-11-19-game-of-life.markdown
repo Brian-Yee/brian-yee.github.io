@@ -286,7 +286,8 @@ Now that we have define the rules let's play around with our system and see what
 
 God that never gets boring to me. There's something so mesmerizing about the expansion and
 contraction of certain shapes. I find it totally amazing to see how sometimes when you are sure the
-simulation is going to fizzle out. Is this always the case? No, I'm simply saying
+simulation is going to fizzle out it rallies to a beautiful symmetric form to live on. Is this
+always the case? No, I'm simply saying
 
 <p style="text-align:center">
     <img alt="Life uhh finds a way." src="../images/game-of-life/goldblum.gif">
