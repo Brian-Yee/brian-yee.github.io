@@ -1,5 +1,5 @@
 ---
-title:  A Case for RSS and Getting Started with Elfeed
+title:  📣 A Case for RSS and Getting Started with Elfeed
 date:   2019-09-08 00:00:00
 layout: default
 categories: [""]

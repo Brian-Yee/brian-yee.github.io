@@ -1,3 +1,11 @@
+---
+title:  👃 Smells like Teen Statistics
+date:   2019-08-29 00:00:00
+layout: default
+categories: [""]
+author: Brian Yee
+---
+
 > Fun fact: statistical physics involves no actual statistics
 
 This is a line from the excellent presentation called [So, you think you have a Power Law, Do You?

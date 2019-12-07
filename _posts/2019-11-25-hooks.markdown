@@ -1,5 +1,5 @@
 ---
-title:  Hook, Line and Tinker -- How to Get Started with Git Hooks
+title:  🎣 Hook, Line and Tinker -- How to Get Started with Git Hooks
 date:   2019-11-30 00:00:00
 layout: default
 categories: [""]

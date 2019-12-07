@@ -1,5 +1,5 @@
 ---
-title:  Let's Write an MCMC Sudoku Solver Part I/III
+title:  ✍️ Let's Write an MCMC Sudoku Solver Part I/III
 date:   2019-11-03 00:00:00
 layout: default
 categories: [""]

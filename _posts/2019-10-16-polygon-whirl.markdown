@@ -1,5 +1,5 @@
 ---
-title:  Generating Textured Pentagonal Tessellations
+title:  🧩 Generating Textured Pentagonal Tessellations
 date:   2019-10-20 00:00:00
 layout: default
 categories: [""]
