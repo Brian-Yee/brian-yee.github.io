@@ -1,5 +1,5 @@
 ---
-title:  Percentile Values to Measure Triathlon Performance
+title:  🏃 Percentile Values to Measure Triathlon Performance
 date:   2019-09-29 00:00:00
 layout: default
 categories: [""]

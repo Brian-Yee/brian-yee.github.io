@@ -1,3 +1,11 @@
+---
+title:  🛠 Simple Makefiles to Aid Golang Development
+date:   2019-08-19 00:00:00
+layout: default
+categories: [""]
+author: Brian Yee
+---
+
 A Meta-Commentary on Learning Languages
 ---------------------------------------
 

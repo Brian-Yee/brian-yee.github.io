@@ -1,5 +1,5 @@
 ---
-title:  A Swift Tour Through the Game of Life
+title:  🕹️ A Swift Tour Through the Game of Life
 date:   2019-11-20 00:00:00
 layout: default
 categories: [""]

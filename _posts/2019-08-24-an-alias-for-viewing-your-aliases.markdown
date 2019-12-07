@@ -1,3 +1,11 @@
+---
+title:  👀 An Alias for Viewing Your Aliases
+date:   2019-08-24 00:00:00
+layout: default
+categories: [""]
+author: Brian Yee
+---
+
 # Alias Shrugged
 
 I love Autumn. The crisp Fall breeze, bright coloured trees, small talk moving from weather

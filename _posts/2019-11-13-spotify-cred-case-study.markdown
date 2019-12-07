@@ -1,5 +1,5 @@
 ---
-title:  How to (Securely) Version Control Your Credential Files
+title:  🔏 How to (Securely) Version Control Your Credential Files
 date:   2019-11-16 00:00:00
 layout: default
 categories: [""]

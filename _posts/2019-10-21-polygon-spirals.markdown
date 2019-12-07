@@ -1,5 +1,5 @@
 ---
-title:  Polygon Spiral Art
+title:  🏵️ Polygon Spiral Art
 date:   2019-10-23 00:00:00
 layout: default
 categories: [""]

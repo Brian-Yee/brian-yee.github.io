@@ -1,3 +1,11 @@
+---
+title:  🎲 Gambling in My Fiance's Hometown
+date:   2019-08-31 00:00:00
+layout: default
+categories: [""]
+author: Brian Yee
+---
+
 Christmas Time (not) in the City
 ----------------------------------------------------------------------------------------------------
 
