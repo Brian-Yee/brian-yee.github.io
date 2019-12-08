@@ -1,0 +1,196 @@
+---
+title:  ⌨️ One of a Kind -- My Happy Hacking Keyboard!
+date:   2019-12-07 00:00:00
+layout: default
+categories: [""]
+author: Brian Yee
+---
+
+The Happy Hacking Keyboard
+==========================
+
+**Today I installed the finishing piece of on my Happy Hacking Keyboard (HHKB)!**
+
+For the uninitiated there is a community of people who love the tactile sensation of typing, mainly
+on mechanical keyboard that provide [haptic
+feedback](https://en.wikipedia.org/wiki/Haptic_technology). Like the feeling of playing a real
+piano vs a keyboard mechanical keyboard enthusiasts or "keebs" swear there is a difference to
+mechanical keyboards and regular keyboards. The community broadly divides into two camps "Cherry
+MX" or "Topre" each denoting a brand of mechanical keyboard with their own distinct feelings
+regarding typing. As for the feeling -- I will admit that I enjoy my Topre keys more, however it is
+the Unix friendly layout and aesthetic of the HHKB that I really do enjoy most.
+
+In regards to this aesthetic of the HHKB I have made some sacrifices in feel for looks. Mainly
+swapping out the legendary HHKB stock [PBT
+plastic](https://en.wikipedia.org/wiki/Polybutylene_terephthalate) keycaps that feel divine for
+[ABS plastic](https://en.wikipedia.org/wiki/Acrylonitrile_butadiene_styrene) to achieve a lovely
+translucent purple. **If that wasn't sacrilegious enough** today I installed a keycap from a
+different key-row profile onto a 3D printed Cherry-MX adaptor stem that uses some resin/plastic
+that feels even wetter than ABS to make my little keyboard even more uniquely my own. The keycap
+comes from the [Forbidden Realm Feburary 2018
+Group-Buy](https://www.jellykey.com/artisan-keycaps/artifact-series-forbidden-realm-keycap/).
+Unfortunately my camera phone can't quite catch the purple sparkle of the river in it but
+regardless I still think it's beautiful. A little nature with me whenever I'm coding
+
+![A modified HHKB in the snow](../images/hhkb/hhkb-snow-tilt.jpg)
+
+This post is to discuss the process in case anybody else wants to mod their HHKB as well. To be
+clear this is a _supplementary post_ to the excellent work done by
+[rixtox](https://rix.li/topre-to-cherry-mx-adapter/) where he also does mods himself. However, this
+post can provide a few things his cannot
+
+1. Make you feel less guilty about how dirty your keyboard is -- rixtox's HHKB in the post is
+   pristine it looks almost new! Mine has been well used and abused with my cat strutting her stuff
+   over my keyboard whenever I'm trying to work
+2. More data doesn't hurt when there's only one case study just trying to do a small part to move
+   the needle from `n=1` to `n=2`
+3. It can be hard to tell the scope of the work when a professional does it. I have no special
+   parts. Everything is kinda improvised as handy to get to the end result. Hopefully, this gives
+   others confidence to make a mod even if they feel they don't have all the tools.
+
+Building the HHKB
+=================
+
+The Secret Sauce
+----------------
+
+The first step is to find a way to get [rixtox's 3D printer
+models](https://github.com/rixtox/Topre-to-Cherry-MX-Adapter) into a 3D printer. This week my
+friend told me he purchased a 3D printer in which I _immediately_ threw the file his way. If you do
+not have a friend with a 3D printer you can go to your local library and many of them have
+"makerspaces" where you can take courses to learn how to use their 3D printer.
+
+![3D printer printing](../images/hhkb/3Dprinter.gif)
+
+Paperclip or Puller Get 'em Off
+-------------------------------
+
+This was the first time I used a keycap puller (that I got with my Ergodox EZ) and I gotta say it
+was a much smoother experience then using bent paperclips. Still I would recommend against buying a
+keycap puller when paperclips work just as well, albeit more slowly.
+
+![Keycaps and keycap puller](../images/hhkb/caps.jpg)
+
+Clean Your Keyboard
+-------------------
+
+Nobody's perfect including me. While deconstructing your keyboard take this time to give it a much
+needed cleaning. Now is the time [to go full Gattaca on
+it](https://www.youtube.com/watch?v=3kTdh-u5tis). I cleaned my board multiple times throughout the
+process but mostly at the end, counts is that it's clean before all caps go back on.
+
+![Before and after of keyboard cleaning](../images/hhkb/clean.png)
+
+Pop the Lid
+-----------
+
+Your's will almost definitely look different as I previously modded my HHKB to use the [Hasu BT
+Controller](https://geekhack.org/index.php?topic=71517.0) so that's why there's a battery kicking
+around inside mine.
+
+![Exposed circuit board of HHKB](../images/hhkb/circuitboard.jpg)
+
+Switch the Screwdrivers
+-----------------------
+
+As can be seen in the picture above there are _many_ little screws that need to come out compared
+to the three larger screws that hold the keyboard together. At this point I had to get creative and
+switch screw drivers as my bicycle emergency multitool screwdriver was quite cumbersome. I found an
+eyeglass repair kit around the house and grabbed the Philips screwdriver from it to use but the
+screws are actually torqued in quite tightly. I ended up doing the first turn with the multitool
+and then finish the rest off with the eyeglass repair kit Philips screwdriver. When reassembling I
+did not try to achieve the same amount of torque and the electrocapicitive switches continued to
+work just fine.
+
+![Screwdrivers used to fully disassemble an HHKB](../images/hhkb/screwdriver.jpg)
+
+Separate the Domes
+------------------
+
+With all screws removed you can separate the rubbre domehs from the plunger board. **Be careful**.
+I found that not all domes stayed stuck to the board and can fall off. Underneath is the spring
+that pops the dome back up and this could easily fall/roll off your table. Obviously YMMV but
+additional anticipation does not hurt here. **This will become a pain later so take care now**.
+
+![Rubbre domehs](../images/hhkb/rubbre-domeh.jpg)
+
+Mind the Hook
+-------------
+
+The least intuitive part is perhaps this step. Each Topre plunger has a little hook that prevents
+the plunger from falling out when the plunger board is manipulated. It may seem scary but the way I
+removed it is to bottom up the plunger and then use your narrow Philips (or corresponding flathead)
+screwdriver to lever the _side with the hook_ against the channel to pop it out. I simply took lots
+of caution and gradually used increasing force until this occurred.
+
+![Rubbre domehs](../images/hhkb/hook.jpg)
+
+Final Touches
+-------------
+
+Various 3D printers print in various qualities. I am by no means an expert with 3D printing but I
+think it is safe to assume that [rixtox's 3D printer is very
+nice](https://rix.li/topre-to-cherry-mx-adapter/) as the adaptor I had printed was notably rougher
+then the smooth pictures I had seen before. **As can be seen Rixtox's keycaps do not have hooks**.
+Theoretically, if you flip the adapted board upside down all plungers will fall out. This makes
+reassembling the board a bit trickier but you can still rotate the plunger board to a little over
+90 degrees before the custom plungers slide out. The corresponded rubbre domeh board can prevent
+domes from falling by rotating to a little less than 90 degrees and each can be sandwiched to
+reassemble but were getting ahead of ourselves here.
+
+![Comparison of custom rixtox adaptors to stock](../images/hhkb/comparison.png)
+
+The dimensions of the custom adaptor are still close enough that it could be slotted in **with some
+resistance** during the plunging process. To reduce this I took some random file I found in my
+house and smoothed out the contact points
+
+![Sanding down a custom rixtox adaptor](../images/hhkb/sanding.gif)
+
+After sanding the rixtox plunger slides much more smoothly into the plunger board.
+
+Reassemble
+----------
+
+Then you just literally do everything in reverse and enjoy your new keyboard. Sorry no pictures for
+this step. Just some steady hands, patience and a little nervousness that you didn't screw anything
+up.
+
+Pics or It Didn't Happen
+========================
+
+Here's a close up of the keycap
+
+![Close up of Cherry MX key on HHKB](../images/hhkb/closeup.jpg)
+
+and the pic at the start of this
+
+![A modified HHKB in the snow](../images/hhkb/hhkb-snow-tilt.jpg)
+
+a frontal pic in the snow although I'm not really a fan of the lighting
+
+![A frontal picture of a modified HHKB in the snow](../images/hhkb/hhkb-front-snow.jpg)
+
+I think the lighting of my HHKB in this picture of it on top of a mountain with a curious chipmunk
+more accurately displays what it looks like IRL.
+
+![A HHKB on a mountain top with a chipmunk](../images/hhkb/happy-hiking-keyboard.jpg)
+
+Summary
+=======
+
+Today I modded my HHKB to add a keycap to it that I bought nearly two years ago. The delayed
+installation of the key was finally performed with the help of a friend who purchased a 3D printer
+this week. Some of the defects from his printer were sanded off to ensure a smooth tactile feel and
+the adaptor was installed. Additionally my keyboard got a much needed cleaning.
+
+The goal of this post was to satisfy some of the curiosity of HHKB owners in the difficulty in
+doing a more complex modification (then say the Hasu BT Controller mod) to their HHKB. Provided you
+have a local public library with access to a 3D printer and the desire for artisan keycaps exists
+in your heart: this post should have encouraged you to go out and quell it. I'm a little torn on
+how high the keycap comes up off my keyboard given at the time of the purchase I did not have the
+foresight or perhaps knowledge to understand the full process. However, much as our flaws make us
+unique and within that individualism there is room for serendipitous insights the keycap coming up
+so high allows others to more easily appreciate the full craftsmanship of the keycap. Not sure if I
+would ever really aim for that but as the HHKB FN key I don't hit it enough to have it disrupt my
+workflow and make an interesting conversation starter. Nonetheless, the exercise of modding and
+creating is quite nice and I will think fondly of this step in the journey of me and my HHKB.
