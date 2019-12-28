@@ -1,6 +1,6 @@
 ---
 title:  📚 2019 Readings
-date:   2019-12-19 00:00:00
+date:   2019-12-28 00:00:00
 layout: default
 categories: [""]
 author: Brian Yee
@@ -34,12 +34,13 @@ quantified as
 $$
 \mathbb{E}(\text{happiness}) =
   \text{probability}(\text{outcome}) \times
-  \text{happiness}(\text(outcome))
+  \text{happiness}(\text{outcome})
 $$
 
 and it is held that from the previous probability of whatever outcome was
 smaller than it is now because technology allows access to a wider audience
-which _ironically_ correctly avoids a [Bayesian Fallacy]() at the cost of
+which _ironically_ correctly avoids a [Base Rate
+Fallacy](https://en.wikipedia.org/wiki/Base_rate_fallacy) at the cost of
 overestimating the influence gained by the residual population obtained.
 
 Humans do not exist in a vacuum despite our existence being bound to ourselves.
@@ -50,7 +51,8 @@ statistical physic models known for decades. Whether or not the realm of
 statistical physics is sufficiently rich to provide a toy-model of the
 propagation of interactions between humans and atoms is not something I will
 discuss here. The interested reader can pursue that route by studying the merits
-of [econophysics]() or [sociohpysics]().
+of [econophysics](https://en.wikipedia.org/wiki/Econophysics) or
+[sociophysics](https://en.wikipedia.org/wiki/Social_physics).
 
 Let us digress to the main point of _how to be heard_ with a sharper distinction
 between the _external_ platforms that allow one to be heard and how one
@@ -86,7 +88,7 @@ Abridged and Curated Works
 
 Much of the abrdiged and curated works came out of The Penguin's Great Idea
 collection. Much of these works however do not need to be purchased via Penguin
-though, some of them are avaialble online such as [The Indian
+though, some of them are available online such as [The Indian
 Jugglers](http://www.juggling.org/papers/hazlitt/) and [On the Pleasure of
 Hating](http://www.blupete.com/Literature/Essays/Hazlitt/Hating.html) both of
 which are written by William Hazlitt. Some others however are less difficult to
@@ -111,27 +113,27 @@ by themselves.
 Logico Philosophicus Tractatus
 ------------------------------
 
-At work recently I was introduced with an indvidiual who pursed a Graduate
+At work recently I was introduced with an individual who pursed a Graduate
 degree in Philosophy. When I mentioned I was currently reading the
 [Tractatus](https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus) he
 laughed and said I should just read
 [PI](https://en.wikipedia.org/wiki/Philosophical_Investigations). However, part
 of the joy of reading Tractatus was reading something so compact and alluring
-only to know that it would be totally desroyed within half a decade. So reading
+only to know that it would be totally destroyed within half a decade. So reading
 the Tractatus is less about identifying a universal truth then practice in
 holding reservation and not willfully falling into any text I read.
 
 The Tractatus however was more than just a system to practice in trying to poke
 holes with. It ended up being a way of understanding the limits of computing and
 in particular the limits of describing everything as an abstract syntax tree.
-What I found intersting was Wittgenstein's idea of "the mystical" that could not
+What I found interesting was Wittgenstein's idea of "the mystical" that could not
 be described by the AST. Namely the idea of simply containerizing and
-quarantining all parts that do not agree with a model and assinging it to
+quarantining all parts that do not agree with a model and assigning it to
 mysticism may _feel_ attractive but just because something _feels_ pretty
 doesn't mean it is right.
 
 "Wittgenstein's Ladder" is something we should all try to climb. In someways I
-feel it is mroe of a Wittgenstein's Mandala given it was erected to be
+feel it is more of a Wittgenstein's Mandala given it was erected to be
 discarded, just not in the way Wittgenstein intended. If you would like an
 [online interactive
 copy](http://www.tractatuslogico-philosophicus.com/#node/n1-) is available and
@@ -140,8 +142,8 @@ you can read to whatever depth you'd like.
 The Second Sex
 --------------
 
-Feminism is an opionated subject. Even with more formulated opinions around how
-to articulate my beliefs after reading The Second Sex I am still hesitant to
+Feminism is an opinionated subject. Even with more formulated opinions around
+how to articulate my beliefs after reading The Second Sex I am still hesitant to
 discuss the subject in written text as opposed to verbal communication (see
 reasons outlined in intro). What I can discuss is perhaps not the frameworks or
 analysis that Simone de Beauvoir used but how it impacted my view of the world.
@@ -151,7 +153,7 @@ to understanding her desires may not fit into my logical framework. Calculations
 I make that I believe to based on statistics are aggregated over the course of
 my life and what has worked for me and not her. To fully support her I now try
 to place faith in the idea that life is more multi-faceted and the _logical_
-conclusion is not neccessairly the most helpful one.
+conclusion is not necessarily the most helpful one.
 
 Secondly, reading about the first wave of feminism and the exploitation of women
 labour in factories has made me seriously question the modern exploitation of
@@ -189,9 +191,9 @@ Conclusion
 ==========
 
 I have outlined some books that I read this year and how they impacted me. For
-the sake of time I did not expound on any of them to deeply *because if you are
-interested you should read about them and if still intersted _read them_*! Mine
-here are only to present a list of books to investigate not convince the reader
-of this blog to read them. Such long books require som skin in the game and me
-ranting and raving about some of them will not be enough to give any of them the
-attention they deserve.
+the sake of time I did not expound on any of them to deeply **because if you are
+interested you should read about them and if still interested _read them_**!
+Mine here are only to present a list of books to investigate not convince the
+reader of this blog to read them. Such long books require some skin in the game
+and me ranting and raving about some of them will not be enough to give any of
+them the attention they deserve.
