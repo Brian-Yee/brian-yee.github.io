@@ -1,0 +1,220 @@
+---
+title:  🐮 The Brand of "Everything is Branding"
+date:   2020-01-16 00:00:00
+layout: default
+categories: [""]
+author: Brian Yee
+---
+
+Everything is Branding
+======================
+
+> Everything is branding
+
+I hear this a lot, most often at work and I think the way it is usually
+conceived is dangerous. It's easy to let ourselves be defined through our work
+since after all it's what we do for a third or more of the day but it is
+important to realize that it is one _facet_ of our existence. When "Everything
+is branding" is taken to heart it is tempting to believe that everything in the
+world is in fact branding including ourselves, but how useful is this knowledge?
+If I said everything is functional programming and pointed at syntactic sugar
+used in an imperative way claiming that it's really functional have I missed the
+point? Furthermore isn't it more accurate to say that everything is a
+fundamental constituent of matter? What does this knowledge of fermions and
+bosons actually give me to better live my life as a human being?
+
+![Standard model of physics](../images/brands/standard-model.png)
+
+The familiarity we have with our jobs and economical/capilitistic thought makes
+it easy to constantly frame things in what appears common and appears easy.
+Despite many of our lives constantly being evaluated by an economic view its
+application on a day-to-day level can feel inorganic. As the joke goes
+
+> When asked "How Much is a Life Worth" an Economist will answer: "In noumenonal
+> or regular dollars?"
+
+perhaps if the reader is apt to be content with the statistical [Value of
+Life](https://en.wikipedia.org/wiki/Value_of_life) pegged at less than 10
+million per person, this post will be of little interest. For those interested
+in the noumenon or less stringently that the juicy details are in the variance
+and not the aggregate, read on.
+
+What is Not Branding?
+=====================
+
+The concept of "branding" in "everything is branding" no doubt varies from
+individual to individual. For now, let us adopt the pedestrian definition of the
+modern brand in that truism expressed as "everything is based around a
+cultivated perception of an abstract concept usually pertaining to a way of life
+that is invoked when a sign is signaled". It is easy to see how the modern view
+of branding has originated given we have been putting marks on things for
+utility purposes ever since ancient times. A particularly ancient practice of
+branding occurs in the marking or livestock dating back to 2700BC in Ancient
+Egypt. The Ancient Romans also practice livestock branding and some further
+believed that the brand could be part of a magic spell to impart upon their
+livestock to increases safety of their asset.
+
+![Ancient Egyptian Cattle](../images/brands/cattle.jpeg)
+
+The idea of attaching meaning to a symbol -- one of a mystic or religious
+connotation is the first anomaly of the "everything is branding" doctrine. The
+notion of branding livestock with, for simplicity and familiarity let us say a:
+Cross, Star of David, Pentagram, Taijitu, Pentagram etc differs from the
+branding of livestock with McDonalds, Wendys, Burger King, Subway. Furthermore
+the inversion of asymmetrical religious signs may carry a connotation more
+severe then the inversion of one of the non-religious "brands" or being
+[subvertised](https://en.wikipedia.org/wiki/Subvertising). At this point we are
+not arguing about _branding_ anymore so much as we are arguing about the field
+of _semiotics_, the study of sign processing and the creation of meaning. We are
+now less concerned about branding itself so much as a framework to describe
+reality of which branding is a part of and with this we are _empowered_ to
+attach our line of thought to the opinions of experts who focus on contextualize
+nuances.
+
+The Semiotics of Branding
+=========================
+
+Let us look at the rather straightforwardly named paper the [The Semiotics of
+Brands](https://www.annualreviews.org/doi/pdf/10.1146/annurev.anthro.012809.104939)
+by Paul Mannings. The abstract reads
+
+> Approaches to the semiotics of brand are troubled by the lack of any accepted
+> analytic definition of the phenomenon, as well as capacious, almost
+> metaphysical, extensions in which brand becomes identified with semiosis as
+> such, and thus **everything is a brand**. In addition, studies of brand tend to
+> focus on highly visible or successful brands, as often as not as a proxy for a
+> real object of analytic interest that lies elsewhere. Brand discourse defines
+> brand in opposition to the material properties of the product, leading to a
+> dematerialization of brand, which erases the messy materialities,
+> contingencies, and hybrids that continually arise in the material semiosis of
+> brand. Rather than attempt a definition of brand, the recent literature on
+> brand semiotics is explored along several material and semiotic dimensions of
+> the variousness of its relationship to its universes of circulation and in
+> different professional discourses and historical and cultural contexts.
+>
+> _[Modified via bolding added for emphasis]_
+
+Which uses extraordinarily complicated language for experts to communicate
+exceptionally specific details of what brands mean. Let us break down the
+central premises of their work for our use
+
+1. The lack of definition of a brand, allows modern "new-wisdoms" such as
+   "Everything is Branding".
+2. On average the study of "brands" is really the study of _successful_ brands.
+3. Brands are not defined by what they are but namely what they are not: their product.
+4. Recent literature on brand semiotics has moved out of modernism into post-modernism.
+
+Of these points, the third is perhaps the most deceptively informative. Mannings
+cites other papers in a particularly elucidatory excerpt
+
+> [A]s brand guru David Ogilvy put it in 1955, [the brand is] the “intangible
+> sum of a product’s attributes, its name, packaging, and price, its history,
+> reputation, and the way it is advertised” (cited in Wang 2007, pp. 23–24), to
+> leaving behind the dull, passive, generic, inert utility and materiality of
+> the product entirely, taking on an “enchanting, sometimes religious
+> character,” adding a “spiritual dimension to what used to be ‘merely a
+> product’” (Askegard 2006, p. 96).
+
+Although perhaps it is too modest to call [David
+Ogilvy](https://en.wikipedia.org/wiki/David_Ogilvy_(businessman)) only a "guru
+of branding" given he is credited as The Father of Branding. This priveleged
+doublet formed by the pair of brand/product fits within a [folk
+psychology](https://plato.stanford.edu/entries/folkpsych-theory/) arranging the
+world in ontologies of opposing doublets such as form/function,
+decorative/functional, and immaterial/material. The brand is imbued with a
+mystique that is derived from a realm separate from the material of the product
+itself, placing emphasis not on the utility of the item but on its ephemeral
+and enchanting character.
+
+Brands as Meta-Symbols
+======================
+
+The intangible and ambiguous nature separating brand from product makes it
+difficult to pin down a definition
+
+> thus everywhere, and yet nowhere, the phenomenon [of branding] comes to be
+> represented as an essentially immaterial form of mediation, a kind of
+> globalized interdiscursivity, an indexical icon of the virtual nature of the
+> global capitalist economy itself
+
+This tying of brands to global capitalism results in
+
+> [M]uch analytic attention [given] to specific highly salient western brands
+> (Coca-Cola, Nike) that serve as what Miller (1998) calls “meta-symbols” of
+> aspects of this global culture of circulation: “So Coca-Cola is not merely
+> material culture, it is a symbol that stands for a debate about material
+> culture” (p. 170).
+
+<p style="text-align:center">
+    <img alt="Fight Club XKCD" src="../images/brands/fight_club.png">
+</p>
+
+Thus to speak of brands or branding is to pull in the ideologies of the system
+that propagates the brands themselves. If you point to a "brand" you can equally
+point anywhere within the system and claim that that it is part of the brand as
+well. One can be in Peru and point to the coffee fields as part of the "brand"
+of McDonalds since it lies in the coffee belt between the tropics of Cancer and
+Capricorn and utilizes only the _finest arabica_ beans. Yet it would be hard
+when faced with the reality of workers conditions to not consider the
+implications of the global economy and how the supposedly _finest arabica beans_
+are provided. To point at the "Two Golden Arches" arches and say that _that_ is
+the brand of McDonalds is inherently misguided, for you have just read and
+understood what I meant by saying "Two Golden Arches" without seeing the logo
+itself. The brand of McDonalds exceeds far beyond it's definitive and
+understandably priveleged logo that signals it the strongest. It is not a
+question of language trickery but the insertion of the word "Golden" here that
+has allowed McDonalds to pervade this paragraph.
+
+Thus to say that "Everything is branding." is in the most crude sense to say
+something tautological from within one's own framework. One has not been further
+equipped to solve a problem but rather unite any other individuals in the room
+via rhetorical technique. In the workplace setting, where everyone is exchanging
+time for money, it signals a value that nobody can disagree with without
+undermining the setting in which it is being said. That is to say it is
+particularly clever [speech act](https://en.wikipedia.org/wiki/Speech_act).
+Indeed the [Copenhagen
+school](https://en.wikipedia.org/wiki/Copenhagen_School_(international_relations))
+adopts the view of a speech act as
+
+> whereby the speaker, often politicians or players, act in accordance to the
+> truth but in preparation for the audience to take action in the directions of
+> the player that are driven or incited by the act. This forms an observable
+> framework under a specified subject matter from the player, and the audience
+> who are 'under-theorised [would] remain outside of the framework itself, and
+> would benefit from being both brought in and drawn out.'[34] It is because the
+> audience would not be informed of the intentions of the player, except to
+> focus on the display of the speech act itself. Therefore, in the perspective
+> of the player, the truth of the subject matter is irrelevant except the result
+> produced via the audience.[35]
+
+These speech acts extend to many business mantras used in the work-place. The
+truisms they contain so far as in the context of business relations are grasped
+within a tautological sense. The action itself is less to inform the individuals
+receiving knowledge so much as to entertain the people in the room with tidbits,
+quips or factoids, each of which _never_ authentically display the true motive
+of the speaker. If during a physics tutoring session the tutor said "Everything
+is branding." the student would understandably be confused. However, via
+substitution of some truism such as "Everything is a solution." it would
+entertain the student to look at what the tutor wants, while in no way actually
+preparing the student for an upcoming exam. Still, if the tutor uses the speech
+act correctly it may aid the student along the process of studying and be a part
+of increasing their performance. It is a tool to appeal to the _[pathos]()_ of
+the audience.
+
+![Tautology Club](../images/brands/tautology.png)
+
+Summary & Conclusion
+====================
+
+We have discussed the semiotics of branding and how discussion of it can occur
+in Western business settings. Business mantras were shown to be a useful form of
+a speech act to employ rhetoric in uniting a room of individuals to follow an
+undisclosed agenda of the speaker. It was emphasized that the speech act is not
+nefarious but rather a tool to appeal the pathos of the audience. Arguably the
+usefulness of the statement ends there and further pontification of the point
+outside of that setting can lead to the invokation of global capitilism as the
+most forefront of mind brands eventually morph into meta-symbols. Thus, let us
+appreciate and be aware of the use of such speech acts and how they affect the
+audience particularly when we are within them. Hopefully from them, we too can
+learn how to unite others to drive business forward lest we eventually adopt the
+mantras spoken as a way to unite our fractured selves.
