@@ -1,0 +1,188 @@
+---
+title:  🦴 The Ride Never Ends
+date:   2020-01-28 00:00:00
+layout: default
+categories: [""]
+author: Brian Yee
+---
+
+Advanced Calc II
+================
+
+On March 26th, 2012, I milled into my Advanced Calculus II class that occurred
+shortly before lunch. It was the final course of calculus required for my
+curriculum before breaking us off to specialize in courses dedicate to the field
+of differential equations. It was useful in formalizing many multidimenisonal
+abstractions such as
+[Jacobians](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant) and
+emphasizing the use of a change of mathematical basis: the ways one can measure
+and quantify space. The apex of this course culminated in learning was being
+able to calculate the so-called "TBN-vectors" which are more formally referred
+to as the [Frenet–Serret
+formulas](https://en.wikipedia.org/wiki/Frenet%E2%80%93Serret_formulas) in the
+study of [Differential
+Geometry](https://en.wikipedia.org/wiki/Differential_geometry). TBN-Vectors
+allow one to calculate an orthogonal reference frame along a continuous curve in
+3D-space. The initialism TBN refers to the three types of vectors that occur for
+every point in space referred to as tangential, binormal and normal. Each vector
+exists orthogonally (at 90 degree angles) to another as if they were the edges
+that connect a corner of a cube. For whatever reason these were the hardest
+things for me to grapple with mathematically at the time. I'm gonna skip the
+math and just post a gif of what this looks like.
+
+<p style="text-align:center">
+    <img alt="Illustration of TBN vectors" src="../images/mrbones/tnb.gif">
+</p>
+
+There's clearly a lot going on in the gif, which hopefully gives credence to my
+previous mathematical difficulties encountered with TBN vectors. Of course there
+is something to be said about the trajectories upon which TBN vectors need be
+calculated. The more complicated the trajectory the more complicated the TBN
+vectors. Unbeknownst to me on that same day a trajectory would be entered into
+meme culture...
+
+Mr. Bones' Wild Ride
+====================
+
+Mr. Bones' Wild Ride is a roller coaster ride created in Roller Coaster
+Tycoon 2. It was originally posted on March 26th, 2012 with details about the
+ride including an apparent 4 years of game time required for each passenger to
+finish with the m constantly yelling "I want to get off Mr. Bones' Wild Ride!" in
+between. Unfortunately, for the passengers at the conclusion of the ride, upon
+exiting, they are met with a short path that leads only to the entrance of the
+ride. If that wasn't cruel enough they are met with a giant skeleton (assumedly
+Mr. Bones) and a sign saying “The ride never ends.”
+
+<p style="text-align:center">
+    <img alt="Screenshot of Mr Bones' Spooky Ride" src="../images/mrbones/mrbones2.jpg">
+</p>
+<p style="text-align:center">
+    <img alt="Screenshot of Mr Bones' Spooky Ride" src="../images/mrbones/mrbones1.jpg">
+</p>
+
+The meme has since spread far and wide, morphing into various homages as well as
+a [creepypasta](https://knowyourmeme.com/memes/creepypasta) and association with
+["2Spooky"](https://knowyourmeme.com/memes/2spooky) and the ["Spooky, Scary
+Skeleton's"](https://knowyourmeme.com/memes/spooky-scary-skeletons) song. The
+reasons for this are, of course, a matter of debate but I think like the food
+industry's [bliss point](https://en.wikipedia.org/wiki/Bliss_point_(food)) "Mr.
+Bones' Wild Ride" strikes a meticulously balanced composition of: a unique
+pretense, good clean fun, and soul crushing existential dread. We laugh because
+our only other option is to cry. That fate is a cruel cycle that we are doomed
+to repeat has been repeatedly touted throughout history. From the ancient cities
+of Greece to the highest regions of Nepal this idea has persisted throughout
+religion and in the modern landscape devoid of religion Mr. Bones' stands in
+place as either a [God](https://en.wikipedia.org/wiki/God), [Grim
+Reaper](https://en.wikipedia.org/wiki/Death_(personification)) or some sort of
+[Shinigami](https://en.wikipedia.org/wiki/Shinigami) in between. Ask yourself:
+would the joke be nearly as funny if the skeleton was the same size as the
+virtual people and simply held the sign with two bony hands? Of course not,
+because at the core of this meme is the idea that we are behooven to a higher
+power. The fact that here we are mercy to a maniacal, gargantuan, top-hat
+tipping, skeleton named "Mr. Bones" only underscores the absurdity of the lives
+of these pixelated individuals. To laugh at this picture is not to laugh at Mr.
+Bones nor to laugh with him, it is to laugh at The Absurd: capital "T" capital
+"A".
+
+The Myth of Sisyphus
+====================
+
+The Absurd has it's routes in primarily two philosophers, each with badass
+names: Søren Kierkegaard and Albert Camus. Kierkegaard was the first to tackle
+The Absurd and as a byproduct introducing the concept now known today as "[a
+leap of faith](https://en.wikipedia.org/wiki/Leap_of_faith)". The escapement of
+The Absurd is so inscrutably difficult that one must take an illogical but
+perhaps neccessary religious jump into the unknown. Camus 50 years later would
+call Kierkegaard's solution one of "philosophical suicide" claiming the ideal
+answer was one of escape but to revolt against The Absurd. Freed from the
+shackles of religious and moral convictions one is free to experience life to
+their fullest. One must seek meaning out of meaninglessness while not succumbing
+to the tempting possibilities of nihilism or religious servitude
+
+> There is so much stubborn hope in the human heart. The most destitute men
+> often end up by accepting illusion. That approval prompted by the need for
+> peace inwardly parallels the existential consent. There are thus gods of
+> light and idols of mud. But it is essential to find the middle path leading
+> to the faces of man.
+>
+> Albert Camus. The Myth of Sisyphus
+
+The Myth of Sisyphus in which Camus discussed his philosophy of The Absurd to
+greatest detail ends on the note that Sisyphus -- banished to eternal damnation
+via the hard labour of rolling a rock up a hill -- must accept his fate and
+smile as he walks back down to roll the rock back up.
+
+<p style="text-align:center">
+    <img alt="Artwork representing the myth of Sisyphus" src="../images/mrbones/sisyphus.jpg">
+</p>
+
+The equivalent for Mr. Bones' Spooky Ride would be for the virtual people to
+smile in the brief moments they have walking between the exit and re-entrance.
+In this less romantic metaphor one becomes sympathetic to Kierkegaard's
+forethought of this line of reasoning as "demoniac madness" that must be
+abandoned by placing faith in god. Still considering that the virtual people
+place their faith in a higher power than Mr. Bones -- a benevolent creator who
+created their whole roller coaster park universe also seems equally absurd...
+
+Bonne Fête! Compagnon de Misères.
+=================================
+
+Now I cannot, nor will not, for a second claim I can resolve the dispute between
+these two heavyweight hitters of existentialism. All I can do is point out to
+others the themes I observe in Mr. Bones' Spooky Ride and my Advanced Calculus
+II class. When I look at Mr. Bones' Spooky Ride existentialist absurd philosophy
+is not the only thing to come to mind -- I wonder what the TBN vectors and
+g-force the riders experience. For however abysmal or appalling their existence
+may be, they are not immune to the laws Roller Coasters as trajectories in space
+must abide by.
+
+Each individual on a roller coaster is free to take the action to infer their
+own TBN vectors. Such complex calculus on such a wild ride seems impossibly
+difficult if not for the fact that the centripetal force experienced is that of
+the normal vector defined as an [osculating
+circle](https://en.wikipedia.org/wiki/Osculating_circle). We need not know of
+some advanced system for understand local reference frames on the ride we need
+only pay attention to the forces that are applied to us. Of course, in the the
+real world there exists no such global trajectory, no one path that we all
+follow through life. Every person will be succumbed to different forces pulling
+and pushing us this way and that. In the condition of human existence it is less
+the ride that creates the physical TBN-vector forces but the vector forces that
+are linked together temporarily to construct some trajectory. In some manner the
+conditions of our lives is more akin to pixelated individuals in "Mr. Bones'
+Wild Roller Coaster Park" and us the pixelated individuals, free to choose any
+wild ride but confined until death to stay in the park.
+
+It this interpretation as we walk between rides and occasionally have the fortune
+of bumping into each other it is not Camus or Kierkegaard's advice that rings the
+most true but Schopenhauer's
+
+> One might indeed consider that the appropriate form of address between man and
+> man ought to be, not *monsieur, sir,* but *fellow sufferer, compagnon de
+> misères*. However strange this may sound it corresponds to the nature of the
+> case, makes us see other men in a true light and reminds us of what are the
+> most neccessary of all things: tolerance, patience, forbearance and charity,
+> which each of us needs and which each of us therefore owes.
+>
+> Arthur Schopenhauer. On the Suffering of the World
+
+The Worldly Table
+=================
+
+While the opinions of Kierkegaard and Camus certainly provide an excellent
+starting point for individualistic concerns start off 2020 it is likely the
+Schopenhauerian interpretation that is of most benefit. The news this week has
+highlighted unprecedented levels of partisanship in the USA, concerns of
+pandemic outbreaks in China and a firmly rejected peace plan in the Middle East.
+It is tempting to take refuge and "Want to get off Mr. Bones' Wild Ride" but the
+world and The Absurd are here to stay. At this time, the best one can do is
+reflect on one's own life trajectory and consider what they can do and be ready
+to greet the fellow passengers they will meet along the way. We are all on Mr.
+Bones' Wild Ride although our frames of reference may all appear vastly
+different.
+
+> To live together in the world means essentially that a world of things is
+> between those who have it in common, as a table is located between those who
+> sit around it; the world, like every in-between, relates and separates men at
+> the same time
+>
+> Hannah Arendt. The Human Condition
