@@ -1,0 +1,177 @@
+---
+title:  The Perpetual Liminality of Tarkovsky's Solaris
+date:   2020-01-28 00:00:00
+layout: default
+categories: [""]
+author: Brian Yee
+---
+
+Foreword
+--------
+
+The following article is part of an ongoing series where a random piece of media
+is selected and I am to write about it. The exercise for this week is to write a
+piece commenting on Andrei Tarkovsky's 1972 3 hour film Solaris. If one wants to
+understand the basic premise of Solaris I encourage them to watch the [2002
+George Clooney Trailer](https://www.youtube.com/watch?v=rvm7WMbXfeY). For an
+example of how the 2002 differs drastically from the 1972 version you can watch
+that [1972 trailer](https://www.youtube.com/watch?reload=9&v=k46i5gXxAxg) which
+gives the reader a better impression of why this is a critically accalimed artsy
+renowned film. Finally, meeting somewhere in between one could watch a recut
+that [mashes the 1972 version with the 2002
+audio](https://www.youtube.com/watch?v=QR0buWkOuO8). Or just read the wikipedia
+plot summaries for [1972](https://en.wikipedia.org/wiki/Solaris_(1972_film)) or
+[2002 plot summary](https://en.wikipedia.org/wiki/Solaris_(2002_film)).
+
+
+The Definition of a Contemporary Classic
+----------------------------------------
+
+The main tragedy in watching contemporary filmsis not that any are particularly
+worse than their predecessors but that none have had time to age and mature.
+This process of aging into the pantheon of cinema is usually referred to
+colloquially as "the test of time" succinctly summarizing why despite our
+greatest wishes no modern film can be said with absolute certainty to be a
+classic. Thus a neccessary but non-sufficient condition for a classic is that it
+exist throughout the ages but the question remains of what a classic still
+exactly is.
+
+A classic is given by some aesthetic expression that is appreciable by all human
+beings. Appreciability is distinct from enjoyability in that one does not need
+to enjoy something to have it be a part of them, on the contrary many of the
+classics are perceived by modern soceity as "boring" precisely because of their
+applicability to our everyday lives. Various Ancient Greek myths are so embedded
+in society the concept of
+[Narcissim](https://en.wikipedia.org/wiki/Narcissus_(mythology)),
+[Tantalization](https://en.wikipedia.org/wiki/Tantalus), [Trojan
+attacks](https://en.wikipedia.org/wiki/Trojan_War) and the [Oedipus
+Complex](https://en.wikipedia.org/wiki/Oedipus) are directly named after them.
+Each of the concepts of these myths pertaining love, torture, fear and beauty
+discuss universally recognizable themes across humanity.
+
+Finally, a classic is usually considered a representation of the world when it
+was written. Each of the aforementioned Greek myths describe the world as it was
+viewed by the Ancient Greeks. As a slight detour we can note that it is thus
+much easier to select a _modern_ classic of film then a _contemporary one_.
+While no sharp dileneations of history exist we take for the contemporary period
+one of the sharpest delineations: the bombing of Hiroshima. Aside from the
+archaeological carbon-dating implications of humans artificially altering the
+number of carbon isotopes in the air the bombing of Hiroshima comes near the
+beginning of the space race that undeniably would usher in a new era for
+mankind.
+
+With these reflections, we are now equipped to formulate a simple definition of
+a contemporary classic:
+
+> An aesthetic piece of artwork with a universally recognizable representation
+> of the world set after the bombing of Hiroshima
+
+We will use this defintion hereafter to limit the scope of our analysis of
+Solaris around the following focus question: "Is Solaris a conetemporary
+classic?". We will handle this question by considering the following structure
+of questioning.
+
+```
+1. Is Solaris an aesthetic film?
+2. What is the theme of Solaris?
+3. Is the theme universal or contemporary?
+```
+
+The Aesthetics of Solaris
+-------------------------
+
+Aesthetics is such a notoriously complex and historically rich field of
+philosophy that will not attempt a rigorous analysis of Solaris here. What I
+can say rigourosly is that as I watched Solaris I found myself increasingly
+drawn into the film's artistic portrayls. From the beauty of various renaissance
+paintings to the lines etched on some of the scientists face the piece
+pulled me into its composition even if at first I found myself somewhat bored
+with the scenes of nature. The linear perspectives and technologically
+minimalistic environment's served to accentuate the performers acts.
+Interestingly I found that the dated and granular scenes of Solaris' "Ocean" to
+be more awe-invoking after repeated exposure than high quality rendering of
+modern digital effects.
+
+What is the Theme of Solaris?
+-----------------------------
+
+Superficially Solaris can be viewed as having a theme of
+[cosmicism](https://en.wikipedia.org/wiki/Cosmicism). The _mechanics of the
+story_ certainly sound like those of Comic horror that of: a mind-reading ocean
+planet that haunts a crew investgating it with materializations of their past
+memories. Thematically one can notice similaries with Cthulu (the posterboy of
+cosmicism) a garagantuan, incomprehensible bio-mass whose mere existence sends
+the minds of men whoe encounter it insane. However, cosmicism is rooted in a
+deeper form of [apathy toward god](https://en.wikipedia.org/wiki/Apatheism)
+there is a marked irrelevance of our opinion on whether or not God does or does
+not exist in the face of what we have recevied from science an our expanded
+knowledge of the cosmos.
+
+In Solaris, while discussions on the merits of science occur the actions of the
+characters still retain relevance in their choice to continue living or commit
+suicide. Near the very beginning of the film the main character watches a
+sucide-note video where the now deceased scientist states that he had not been
+driven to mad but simply chosen to end his life. The way in which characters
+continue to hold onto the choice of how to live their life surrounded by a
+depressing feeling of meaninglessness from a realization caused by the power of
+the planet has the markings of existential nihilism. The brilliance of the film
+comes from the narrative to invoke feelings pertaining to the liminal
+experiences of human life to allow viewers to symapthize with the existentialist
+qualities of existence. This feat can describe the praise and status the film
+has kept for half a century without being banished to the annals as so many
+popular renditions of "edgy" existentialist art so often become.
+
+The Contemporary Universality of Solaris
+----------------------------------------
+
+Having identified nihilistic existentialism as the main theme of Solaris it is
+clear that given our definition as post-world war II one can hardly argue
+against the contemporary nature of the work. Even more so it's inception at 1972
+it seems to exist just before the post-structuralists burst onto the the scene
+of continental thought generally eclipsing existential thought. That this much
+is the case can be seen by simply examining the public intellectuals of the
+40s-60s and 70s-90s. Furthermore, the intent of the Tarkovsky as a filmmaker and
+Lem as the original books authors were totally aligned despite their arguments
+over the vision of the film
+
+> Both the Eastern European Lem and Tarkovsky were critical of what they saw as
+> Western science fiction’s shallowness and wanted to invest the form with
+> intellectual and emotional depth.
+>
+> "Solaris: Inner Space" ~ Phillip Lopate
+
+This intention fits very much within the period of time marked by [New Wave
+Sci-Fi](https://en.wikipedia.org/wiki/New_Wave_science_fiction) which
+was focused around redefining the meaning of Sci-Fi in light of the Golden age
+of the 1940s. Thus, Solaris aligns itself with two contemporary themes one of
+which strikes close to the heart on what existence was thought to entail after
+the end of World War II.
+
+Final Verdict
+-------------
+
+It has been demonstrated that Solaris satisfies each accounts of what it means
+to be a contemporary classic. Solaris displays an aesthetic vision from
+Tarkovsky which communicates a universal theme located temporand displays themes
+relevant to the zeitgest of its time. Yet history and dying reception kept alive
+mainly through cult formation has suggested that Solaris will not withstand the
+test of time.
+
+There is no doubt that Solaris should achieve critical acclaim as it certainly
+meets all the sufficient but non-neccessary criteria for a contemporary classic.
+Solaris' failure lies in the fact that cosmicism still lies in the background of
+the film. The concepts of greater sentient beings than ourselves -- whether they
+be immortal deities, an omnipotent god or one of Lovecraft's "Elder Things" --
+has died and contemporary humanity has been tasked with picking up and
+reconstructing the pieces of a lost mythology and historical anchoring.
+
+What Solaris did was take a piece of human thought and express it beautifully.
+However, the centrality of Solaris to our human existence is lacking. Unlike
+other pure and distilled representations of similar geners and themes like [The
+Time Machine](https://en.wikipedia.org/wiki/The_Time_Machine) or [The Call of
+Cthulu](https://en.wikipedia.org/wiki/The_Call_of_Cthulhu) or
+[Ikiru](https://en.wikipedia.org/wiki/Ikiru) the central narrative while close
+to the heart of humanity, fails to resonate with it. However, should the course
+of history steer us towards a future where large collective scale sentience is
+encountered I have no doubt that Solaris would be hailed as a long-last classic.
+
